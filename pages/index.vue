@@ -310,14 +310,19 @@ useSeoMeta({
   keywords: 'taxi les sables olonne, taxi sables d olonne, taxi vendée, transport médical sables olonne, gare sncf sables olonne, aéroport nantes taxi, taxi olonne sur mer, taxi chateau olonne, taxi la chaume, taxi 24h 24 vendée',
   ogTitle: 'Taxi Les Sables d\'Olonne - Service Professionnel 24h/24 en Vendée',
   ogDescription: 'Service taxi aux Sables d\'Olonne 24h/24. Transport médical conventionné, gare SNCF, aéroport Nantes. Réservation 06 68 31 46 90.',
-  twitterCard: 'summary_large_image'
+  ogUrl: 'https://www.taxi-les-sables-olonne.fr',
+  ogSiteName: 'Taxi Les Sables d\'Olonne',
+  twitterCard: 'summary_large_image',
+  canonicalUrl: 'https://www.taxi-les-sables-olonne.fr'
 })
 
 useSchemaOrg([
   defineLocalBusiness({
     name: 'Taxi Les Sables d\'Olonne',
     description: 'Service de taxi aux Sables d\'Olonne et Olonne-sur-Mer',
+    url: 'https://www.taxi-les-sables-olonne.fr',
     telephone: '+33668314690',
+    email: 'contact@taxi-les-sables-olonne.fr',
     address: {
       streetAddress: 'Place Napoléon III',
       addressLocality: 'Les Sables d\'Olonne',
@@ -326,7 +331,10 @@ useSchemaOrg([
       addressCountry: 'FR'
     },
     openingHours: 'Mo-Su 00:00-23:59',
-    areaServed: ['Les Sables d\'Olonne', 'Olonne-sur-Mer', 'Château d\'Olonne', 'La Roche-sur-Yon', 'Nantes']
+    areaServed: ['Les Sables d\'Olonne', 'Olonne-sur-Mer', 'Château d\'Olonne', 'La Roche-sur-Yon', 'Nantes'],
+    sameAs: [
+      'https://www.taxi-les-sables-olonne.fr'
+    ]
   })
 ])
 </script>

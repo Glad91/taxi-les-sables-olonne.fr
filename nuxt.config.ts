@@ -33,6 +33,8 @@ export default defineNuxtConfig({
         { property: 'og:title', content: 'Taxi Les Sables d\'Olonne - Service 24h/24 en Vendée' },
         { property: 'og:description', content: 'Taxi Les Sables d\'Olonne - Service 24h/24. Transport médical conventionné, liaisons gare-aéroport. 06 68 31 46 90.' },
         { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://www.taxi-les-sables-olonne.fr' },
+        { property: 'og:site_name', content: 'Taxi Les Sables d\'Olonne' },
         { name: 'twitter:card', content: 'summary_large_image' }
       ],
       link: [

@@ -354,13 +354,17 @@ useSeoMeta({
   description: 'Tarifs Taxi Les Sables d\'Olonne - Prix réglementés Vendée 2025. Transport médical conventionné CPAM, gare, aéroport Nantes. 06 68 31 46 90.',
   ogTitle: 'Tarifs Taxi Les Sables d\'Olonne - Prix réglementés',
   ogDescription: 'Découvrez nos tarifs transparents pour tous vos déplacements. Tarifs fixes aéroport, réductions clients fidèles.',
+  ogUrl: 'https://www.taxi-les-sables-olonne.fr/tarifs',
+  canonicalUrl: 'https://www.taxi-les-sables-olonne.fr/tarifs'
 })
 
 useSchemaOrg([
   defineOrganization({
     name: 'Taxi Les Sables d\'Olonne',
     description: 'Grille tarifaire pour services de taxi en Vendée',
+    url: 'https://www.taxi-les-sables-olonne.fr',
     telephone: '+33668314690',
+    email: 'contact@taxi-les-sables-olonne.fr',
     areaServed: 'Vendée'
   })
 ])

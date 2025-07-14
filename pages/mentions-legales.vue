@@ -9,7 +9,8 @@
           <p><strong>Raison sociale :</strong> Taxi Les Sables d'Olonne</p>
           <p><strong>Adresse :</strong> Place Napoléon III, 85100 Les Sables d'Olonne</p>
           <p><strong>Téléphone :</strong> 06 68 31 46 90</p>
-          <p><strong>Email :</strong> contact@taxi-sables-olonne.fr</p>
+          <p><strong>Email :</strong> contact@taxi-les-sables-olonne.fr</p>
+          <p><strong>Site web :</strong> https://www.taxi-les-sables-olonne.fr</p>
 
           <h2>Activité</h2>
           <p>Transport de personnes par taxi. Service de transport médical conventionné.</p>
@@ -27,7 +28,7 @@
           <p>Pour toute question relative aux mentions légales, vous pouvez nous contacter :</p>
           <ul>
             <li>Par téléphone : 06 68 31 46 90</li>
-            <li>Par email : contact@taxi-sables-olonne.fr</li>
+            <li>Par email : contact@taxi-les-sables-olonne.fr</li>
           </ul>
         </div>
 
@@ -48,6 +49,8 @@
 useSeoMeta({
   title: 'Mentions Légales - Taxi Les Sables d\'Olonne',
   description: 'Mentions légales de Taxi Les Sables d\'Olonne. Informations légales, contact et conditions d\'utilisation.',
+  ogUrl: 'https://www.taxi-les-sables-olonne.fr/mentions-legales',
+  canonicalUrl: 'https://www.taxi-les-sables-olonne.fr/mentions-legales',
   robots: 'noindex, nofollow'
 })
 </script>

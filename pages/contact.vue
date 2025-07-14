@@ -69,8 +69,8 @@
               </div>
               <div>
                 <h3 class="font-semibold text-gray-900">Email</h3>
-                <a href="mailto:contact@taxi-sables-olonne.fr" class="text-primary-600 hover:text-primary-700" aria-label="Envoyer un email à contact@taxi-sables-olonne.fr">
-                  contact@taxi-sables-olonne.fr
+                <a href="mailto:contact@taxi-les-sables-olonne.fr" class="text-primary-600 hover:text-primary-700" aria-label="Envoyer un email à contact@taxi-les-sables-olonne.fr">
+                  contact@taxi-les-sables-olonne.fr
                 </a>
                 <p class="text-gray-700 text-sm">Réponse sous 2h en moyenne</p>
               </div>
@@ -327,6 +327,8 @@ useSeoMeta({
   description: 'Contact Taxi Les Sables d\'Olonne - Réservation 06 68 31 46 90. Service 24h/24, Place Napoléon III. Transport médical conventionné, gare, aéroport.',
   ogTitle: 'Contact Taxi Les Sables d\'Olonne - Réservation facile',
   ogDescription: 'Réservez votre taxi aux Sables d\'Olonne. Service 24h/24, transport médical, gare-aéroport.',
+  ogUrl: 'https://www.taxi-les-sables-olonne.fr/contact',
+  canonicalUrl: 'https://www.taxi-les-sables-olonne.fr/contact',
   twitterCard: 'summary_large_image'
 })
 
@@ -334,8 +336,9 @@ useSchemaOrg([
   defineOrganization({
     name: 'Taxi Les Sables d\'Olonne',
     description: 'Page de contact et réservation',
+    url: 'https://www.taxi-les-sables-olonne.fr',
     telephone: '+33668314690',
-    email: 'contact@taxi-sables-olonne.fr',
+    email: 'contact@taxi-les-sables-olonne.fr',
     areaServed: 'Vendée'
   })
 ])

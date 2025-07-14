@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.taxi-sables-olonne.fr/sitemap.xml
+Sitemap: https://www.taxi-les-sables-olonne.fr/sitemap.xml
