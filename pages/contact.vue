@@ -11,7 +11,7 @@
           <h1 class="text-4xl lg:text-5xl font-bold mb-6">
             Réservez votre Taxi
           </h1>
-          <p class="text-xl lg:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+          <p class="text-xl lg:text-2xl text-gray-100 mb-8 max-w-3xl mx-auto">
             Contactez-nous dès maintenant • Réponse immédiate • Service professionnel garanti
           </p>
           <div class="relative w-full max-w-2xl mx-auto h-40 rounded-xl overflow-hidden shadow-lg mb-8">
@@ -31,9 +31,10 @@
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="tel:0668314690" 
-              class="inline-flex items-center px-8 py-4 bg-taxi-yellow hover:bg-yellow-400 text-gray-900 font-bold rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg"
+              class="inline-flex items-center px-8 py-4 bg-taxi-yellow hover:bg-taxi-yellow-hover text-gray-900 font-bold rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg"
+              aria-label="Appeler le taxi au 06 68 31 46 90"
             >
-              <PhoneIcon class="h-5 w-5 mr-2" />
+              <PhoneIcon class="h-5 w-5 mr-2" aria-hidden="true" />
               06 68 31 46 90
             </a>
           </div>
@@ -55,10 +56,10 @@
               </div>
               <div>
                 <h3 class="font-semibold text-gray-900">Téléphone</h3>
-                <a href="tel:0668314690" class="text-lg font-bold text-primary-600 hover:text-primary-700">
+                <a href="tel:0668314690" class="text-lg font-bold text-primary-600 hover:text-primary-700" aria-label="Appeler le taxi au 06 68 31 46 90">
                   06 68 31 46 90
                 </a>
-                <p class="text-gray-600 text-sm">Disponible 24h/24 - 7j/7</p>
+                <p class="text-gray-700 text-sm">Disponible 24h/24 - 7j/7</p>
               </div>
             </div>
 
@@ -68,10 +69,10 @@
               </div>
               <div>
                 <h3 class="font-semibold text-gray-900">Email</h3>
-                <a href="mailto:contact@taxi-sables-olonne.fr" class="text-primary-600 hover:text-primary-700">
+                <a href="mailto:contact@taxi-sables-olonne.fr" class="text-primary-600 hover:text-primary-700" aria-label="Envoyer un email à contact@taxi-sables-olonne.fr">
                   contact@taxi-sables-olonne.fr
                 </a>
-                <p class="text-gray-600 text-sm">Réponse sous 2h en moyenne</p>
+                <p class="text-gray-700 text-sm">Réponse sous 2h en moyenne</p>
               </div>
             </div>
 
@@ -83,7 +84,7 @@
                 <h3 class="font-semibold text-gray-900">Adresse</h3>
                 <p class="text-gray-900">Place Napoléon III</p>
                 <p class="text-gray-900">85100 Les Sables d'Olonne</p>
-                <p class="text-gray-600 text-sm">Liaisons La Roche-sur-Yon, Nantes, Challans</p>
+                <p class="text-gray-700 text-sm">Liaisons La Roche-sur-Yon, Nantes, Challans</p>
               </div>
             </div>
 
@@ -94,7 +95,7 @@
               <div>
                 <h3 class="font-semibold text-gray-900">Horaires</h3>
                 <p class="text-gray-900">Service 24h/24 - 7j/7</p>
-                <p class="text-gray-600 text-sm">Réservation conseillée pour les trajets de nuit</p>
+                <p class="text-gray-700 text-sm">Réservation conseillée pour les trajets de nuit</p>
               </div>
             </div>
           </div>
@@ -249,21 +250,23 @@
       <!-- Info supplémentaire -->
       <div class="mt-16 bg-gradient-to-r from-primary-50 to-blue-50 rounded-2xl p-8 lg:p-12 text-center">
         <h2 class="text-2xl lg:text-3xl font-bold mb-4 text-gray-900">Réservation immédiate ou urgence ?</h2>
-        <p class="text-lg mb-6 text-gray-600">Appelez-nous directement - Service 24h/24</p>
+        <p class="text-lg mb-6 text-gray-700">Appelez-nous directement - Service 24h/24</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a 
             href="tel:0668314690" 
             class="inline-flex items-center px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-bold rounded-xl transition-colors duration-200 transform hover:scale-105 shadow-lg"
+            aria-label="Appeler le taxi au 06 68 31 46 90"
           >
-            <PhoneIcon class="h-5 w-5 mr-2" />
+            <PhoneIcon class="h-5 w-5 mr-2" aria-hidden="true" />
             06 68 31 46 90
           </a>
           <NuxtLink 
             to="/tarifs" 
             class="inline-flex items-center px-8 py-4 bg-white border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white font-semibold rounded-xl transition-all duration-200"
+            aria-label="Consulter la page des tarifs"
           >
             Voir nos tarifs
-            <CurrencyEuroIcon class="h-5 w-5 ml-2" />
+            <CurrencyEuroIcon class="h-5 w-5 ml-2" aria-hidden="true" />
           </NuxtLink>
         </div>
       </div>

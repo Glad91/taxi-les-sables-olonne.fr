@@ -3,8 +3,8 @@
     <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
         <!-- Logo -->
-        <NuxtLink to="/" class="flex items-center space-x-2 text-lg sm:text-xl font-bold text-primary-600 hover:text-primary-700 transition-colors">
-          <div class="w-8 h-8 bg-taxi-yellow rounded-lg flex items-center justify-center">
+        <NuxtLink to="/" class="flex items-center space-x-2 text-lg sm:text-xl font-bold text-primary-600 hover:text-primary-700 transition-colors" aria-label="Retour à l'accueil - Taxi Les Sables d'Olonne">
+          <div class="w-8 h-8 bg-taxi-yellow rounded-lg flex items-center justify-center" aria-hidden="true">
             🚕
           </div>
           <span class="block">Taxi Les Sables d'Olonne</span>
@@ -16,7 +16,7 @@
             v-for="item in navigation" 
             :key="item.name"
             :to="item.href"
-            class="text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200 relative group"
+            class="text-gray-800 hover:text-primary-600 font-medium transition-colors duration-200 relative group"
             :class="{ 'text-primary-600': $route.path === item.href }"
           >
             {{ item.name }}
@@ -30,9 +30,11 @@
           <a 
             href="tel:0668314690" 
             class="bg-primary-600 hover:bg-primary-700 text-white px-3 sm:px-4 py-2 rounded-lg font-medium transition-all duration-200 flex items-center space-x-1 sm:space-x-2 shadow-lg hover:shadow-xl text-sm sm:text-base"
+            aria-label="Appeler le taxi au 06 68 31 46 90"
           >
-            <PhoneIcon class="h-4 w-4" />
+            <PhoneIcon class="h-4 w-4" aria-hidden="true" />
             <span class="hidden md:block">06 68 31 46 90</span>
+            <span class="md:hidden sr-only">Appeler</span>
           </a>
         </div>
 
@@ -41,15 +43,21 @@
           <a 
             href="tel:0668314690" 
             class="bg-primary-600 hover:bg-primary-700 text-white p-2 rounded-lg transition-all duration-200 shadow-lg"
+            aria-label="Appeler le taxi au 06 68 31 46 90"
           >
-            <PhoneIcon class="h-5 w-5" />
+            <PhoneIcon class="h-5 w-5" aria-hidden="true" />
+            <span class="sr-only">Téléphoner</span>
           </a>
           <button 
             @click="mobileMenuOpen = !mobileMenuOpen"
-            class="text-gray-700 hover:text-primary-600 transition-colors p-1"
+            class="text-gray-800 hover:text-primary-600 transition-colors p-1"
+            :aria-label="mobileMenuOpen ? 'Fermer le menu' : 'Ouvrir le menu'"
+            aria-expanded="mobileMenuOpen"
+            aria-controls="mobile-menu"
           >
-            <Bars3Icon v-if="!mobileMenuOpen" class="h-6 w-6" />
-            <XMarkIcon v-else class="h-6 w-6" />
+            <Bars3Icon v-if="!mobileMenuOpen" class="h-6 w-6" aria-hidden="true" />
+            <XMarkIcon v-else class="h-6 w-6" aria-hidden="true" />
+            <span class="sr-only">{{ mobileMenuOpen ? 'Fermer' : 'Ouvrir' }} le menu</span>
           </button>
         </div>
       </div>
@@ -64,14 +72,14 @@
       leave-from-class="opacity-100 scale-100"
       leave-to-class="opacity-0 scale-95"
     >
-      <div v-if="mobileMenuOpen" class="md:hidden absolute top-16 left-0 right-0 bg-white border-b border-gray-200 shadow-lg">
+      <div v-if="mobileMenuOpen" id="mobile-menu" class="md:hidden absolute top-16 left-0 right-0 bg-white border-b border-gray-200 shadow-lg">
         <div class="px-4 py-6 space-y-4">
           <NuxtLink 
             v-for="item in navigation" 
             :key="item.name"
             :to="item.href"
             @click="mobileMenuOpen = false"
-            class="block text-gray-700 hover:text-primary-600 font-medium py-2 transition-colors"
+            class="block text-gray-800 hover:text-primary-600 font-medium py-2 transition-colors"
             :class="{ 'text-primary-600': $route.path === item.href }"
           >
             {{ item.name }}
@@ -79,8 +87,9 @@
           <a 
             href="tel:0668314690" 
             class="block bg-primary-600 hover:bg-primary-700 text-white px-4 py-3 rounded-lg font-medium transition-colors text-center"
+            aria-label="Appeler le taxi au 06 68 31 46 90"
           >
-            📞 06 68 31 46 90
+            <span aria-hidden="true">📞</span> 06 68 31 46 90
           </a>
         </div>
       </div>

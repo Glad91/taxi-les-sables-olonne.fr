@@ -25,7 +25,7 @@
           <h1 class="text-4xl lg:text-5xl font-bold mb-6">
             Nos Tarifs Transparents
           </h1>
-          <p class="text-xl lg:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+          <p class="text-xl lg:text-2xl text-gray-100 mb-8 max-w-3xl mx-auto">
             Tarifs officiels réglementés • Transport médical conventionné CPAM • Pas de frais cachés
           </p>
         </div>
@@ -37,7 +37,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
           <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Tarifs Réglementés Vendée</h2>
-          <p class="text-xl text-gray-600">Grille tarifaire officielle 2025</p>
+          <p class="text-xl text-gray-700">Grille tarifaire officielle 2025</p>
         </div>
 
         <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12">
@@ -88,7 +88,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
           <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Destinations Courantes</h2>
-          <p class="text-xl text-gray-600">Exemples de tarifs selon destinations</p>
+          <p class="text-xl text-gray-700">Exemples de tarifs selon destinations</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -110,15 +110,15 @@
                 <component :is="destination.icon" class="h-8 w-8 text-primary-600" />
               </div>
               <h3 class="text-xl font-bold text-gray-900 mb-2">{{ destination.name }}</h3>
-              <p class="text-gray-600 mb-4">{{ destination.description }}</p>
+              <p class="text-gray-700 mb-4">{{ destination.description }}</p>
               
               <div class="space-y-3">
                 <div class="bg-gray-50 rounded-lg p-4">
-                  <div class="text-sm text-gray-600">Tarif jour</div>
+                  <div class="text-sm text-gray-700">Tarif jour</div>
                   <div class="text-2xl font-bold text-green-600">{{ destination.priceDay }}</div>
                 </div>
                 <div class="bg-gray-50 rounded-lg p-4">
-                  <div class="text-sm text-gray-600">Tarif nuit/dimanche</div>
+                  <div class="text-sm text-gray-700">Tarif nuit/dimanche</div>
                   <div class="text-xl font-bold text-amber-600">{{ destination.priceNight }}</div>
                 </div>
               </div>
@@ -138,7 +138,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
           <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Services Spéciaux</h2>
-          <p class="text-xl text-gray-600">Tarifications adaptées à vos besoins</p>
+          <p class="text-xl text-gray-700">Tarifications adaptées à vos besoins</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -153,7 +153,7 @@
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-4">{{ service.title }}</h3>
             <div class="text-2xl font-bold text-green-600 mb-2">{{ service.price }}</div>
-            <p class="text-gray-600 mb-4">{{ service.description }}</p>
+            <p class="text-gray-700 mb-4">{{ service.description }}</p>
             <ul class="text-left space-y-2">
               <li 
                 v-for="feature in service.features" 
@@ -181,7 +181,7 @@
                 <CreditCardIcon class="h-8 w-8 text-green-600" />
               </div>
               <h3 class="font-bold text-gray-900 mb-3">Moyens de paiement</h3>
-              <ul class="space-y-1 text-sm text-gray-600">
+              <ul class="space-y-1 text-sm text-gray-700">
                 <li>Espèces</li>
                 <li>Carte bancaire</li>
                 <li>Chèque (sur accord)</li>
@@ -194,7 +194,7 @@
                 <PlusIcon class="h-8 w-8 text-amber-600" />
               </div>
               <h3 class="font-bold text-gray-900 mb-3">Suppléments</h3>
-              <ul class="space-y-1 text-sm text-gray-600">
+              <ul class="space-y-1 text-sm text-gray-700">
                 <li>Bagages volumineux : +2€</li>
                 <li>Animal domestique : +3€</li>
                 <li>Attente : 0,60€/min</li>
@@ -207,7 +207,7 @@
                 <TagIcon class="h-8 w-8 text-green-600" />
               </div>
               <h3 class="font-bold text-gray-900 mb-3">Réductions</h3>
-              <ul class="space-y-1 text-sm text-gray-600">
+              <ul class="space-y-1 text-sm text-gray-700">
                 <li>Clients réguliers : -10%</li>
                 <li>Seniors (+65 ans) : -5%</li>
                 <li>Transport médical : CPAM</li>
@@ -220,7 +220,7 @@
                 <InformationCircleIcon class="h-8 w-8 text-blue-600" />
               </div>
               <h3 class="font-bold text-gray-900 mb-3">À savoir</h3>
-              <ul class="space-y-1 text-sm text-gray-600">
+              <ul class="space-y-1 text-sm text-gray-700">
                 <li>Tarifs TTC</li>
                 <li>Devis gratuit</li>
                 <li>Facturation possible</li>
@@ -238,23 +238,25 @@
         <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
           Besoin d'un devis personnalisé ?
         </h2>
-        <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+        <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
           Contactez-nous pour obtenir un devis gratuit adapté à vos besoins spécifiques.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a 
             href="tel:0668314690" 
-            class="inline-flex items-center px-8 py-4 bg-taxi-yellow hover:bg-yellow-400 text-gray-900 font-bold rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg"
+            class="inline-flex items-center px-8 py-4 bg-taxi-yellow hover:bg-taxi-yellow-hover text-gray-900 font-bold rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg"
+            aria-label="Appel gratuit au 06 68 31 46 90 pour un devis personnalisé"
           >
-            <PhoneIcon class="h-5 w-5 mr-2" />
+            <PhoneIcon class="h-5 w-5 mr-2" aria-hidden="true" />
             Appel gratuit : 06 68 31 46 90
           </a>
           <NuxtLink 
             to="/contact" 
-            class="inline-flex items-center px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold rounded-xl transition-all duration-200 backdrop-blur-sm"
+            class="inline-flex items-center px-8 py-4 bg-white/20 hover:bg-white/30 border-2 border-white/40 text-white font-semibold rounded-xl transition-all duration-200 backdrop-blur-sm"
+            aria-label="Aller au formulaire de contact pour demander un devis"
           >
             Demander un devis
-            <CalculatorIcon class="h-5 w-5 ml-2" />
+            <CalculatorIcon class="h-5 w-5 ml-2" aria-hidden="true" />
           </NuxtLink>
         </div>
       </div>

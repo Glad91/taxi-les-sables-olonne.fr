@@ -47,5 +47,7 @@ export default defineNuxtConfig({
       ]
     }
   },
-  css: []
+  css: [
+    '~/assets/css/accessibility.css'
+  ]
 })

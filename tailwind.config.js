@@ -24,10 +24,11 @@ module.exports = {
           900: '#1e3a8a',
         },
         taxi: {
-          yellow: '#fbbf24',
-          blue: '#1e40af',
-          dark: '#1f2937',
-          light: '#f8fafc'
+          yellow: '#f59e0b', // Plus foncé pour meilleur contraste
+          'yellow-hover': '#d97706',
+          blue: '#1d4ed8', // Plus foncé pour meilleur contraste
+          dark: '#111827', // Plus foncé
+          light: '#f9fafb'
         }
       },
       fontFamily: {

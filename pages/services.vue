@@ -7,7 +7,7 @@
           <h1 class="text-4xl lg:text-5xl font-bold mb-6">
             Nos Services de Transport
           </h1>
-          <p class="text-xl lg:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+          <p class="text-xl lg:text-2xl text-gray-100 mb-8 max-w-3xl mx-auto">
             Un service complet adapté à tous vos besoins de déplacement aux Sables d'Olonne et en Vendée
           </p>
           <div class="inline-flex items-center px-6 py-3 bg-taxi-yellow/20 border border-taxi-yellow/30 rounded-full text-taxi-yellow font-semibold">
@@ -36,7 +36,7 @@
               </div>
               <div class="flex-grow">
                 <h3 class="text-2xl font-bold text-gray-900 mb-4">{{ service.title }}</h3>
-                <p class="text-gray-600 leading-relaxed mb-6">{{ service.description }}</p>
+                <p class="text-gray-700 leading-relaxed mb-6">{{ service.description }}</p>
                 <ul class="space-y-2">
                   <li 
                     v-for="feature in service.features" 
@@ -65,7 +65,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Pourquoi choisir nos services ?</h2>
-          <p class="text-xl text-gray-600">Les garanties de votre taxi de confiance</p>
+          <p class="text-xl text-gray-700">Les garanties de votre taxi de confiance</p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -79,7 +79,7 @@
               <component :is="advantage.icon" class="h-10 w-10 text-primary-600" />
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-3">{{ advantage.title }}</h3>
-            <p class="text-gray-600">{{ advantage.description }}</p>
+            <p class="text-gray-700">{{ advantage.description }}</p>
           </div>
         </div>
       </div>
@@ -93,14 +93,14 @@
             <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
               Notre zone de <span class="text-primary-600">couverture</span>
             </h2>
-            <p class="text-lg text-gray-600 mb-8">
+            <p class="text-lg text-gray-700 mb-8">
               Nous desservons Les Sables d'Olonne et toute la région vendéenne avec des liaisons vers les principales destinations.
             </p>
             
             <div class="grid grid-cols-2 gap-6">
               <div>
                 <h4 class="font-semibold text-gray-900 mb-3">Zone locale</h4>
-                <ul class="space-y-2 text-gray-600">
+                <ul class="space-y-2 text-gray-700">
                   <li>• Les Sables d'Olonne</li>
                   <li>• Olonne-sur-Mer</li>
                   <li>• Château d'Olonne</li>
@@ -109,7 +109,7 @@
               </div>
               <div>
                 <h4 class="font-semibold text-gray-900 mb-3">Longues distances</h4>
-                <ul class="space-y-2 text-gray-600">
+                <ul class="space-y-2 text-gray-700">
                   <li>• La Roche-sur-Yon</li>
                   <li>• Nantes</li>
                   <li>• Challans</li>
@@ -145,30 +145,33 @@
         <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
           Prêt à réserver votre course ?
         </h2>
-        <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+        <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
           Contactez-nous dès maintenant pour tous vos besoins de transport. Service rapide et professionnel garanti.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a 
             href="tel:0668314690" 
-            class="inline-flex items-center px-8 py-4 bg-taxi-yellow hover:bg-yellow-400 text-gray-900 font-bold rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg"
+            class="inline-flex items-center px-8 py-4 bg-taxi-yellow hover:bg-taxi-yellow-hover text-gray-900 font-bold rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg"
+            aria-label="Appeler le taxi au 06 68 31 46 90"
           >
-            <PhoneIcon class="h-5 w-5 mr-2" />
+            <PhoneIcon class="h-5 w-5 mr-2" aria-hidden="true" />
             06 68 31 46 90
           </a>
           <NuxtLink 
             to="/contact" 
-            class="inline-flex items-center px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold rounded-xl transition-all duration-200 backdrop-blur-sm"
+            class="inline-flex items-center px-8 py-4 bg-white/20 hover:bg-white/30 border-2 border-white/40 text-white font-semibold rounded-xl transition-all duration-200 backdrop-blur-sm"
+            aria-label="Aller au formulaire de contact"
           >
             Formulaire de contact
-            <ArrowRightIcon class="h-5 w-5 ml-2" />
+            <ArrowRightIcon class="h-5 w-5 ml-2" aria-hidden="true" />
           </NuxtLink>
           <NuxtLink 
             to="/tarifs" 
-            class="inline-flex items-center px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold rounded-xl transition-all duration-200 backdrop-blur-sm"
+            class="inline-flex items-center px-8 py-4 bg-white/20 hover:bg-white/30 border-2 border-white/40 text-white font-semibold rounded-xl transition-all duration-200 backdrop-blur-sm"
+            aria-label="Consulter la page des tarifs"
           >
             Voir nos tarifs
-            <CurrencyEuroIcon class="h-5 w-5 ml-2" />
+            <CurrencyEuroIcon class="h-5 w-5 ml-2" aria-hidden="true" />
           </NuxtLink>
         </div>
       </div>

@@ -20,24 +20,26 @@
               <span class="text-taxi-yellow">Taxi Les Sables d'Olonne</span>
             </h1>
             
-            <p class="text-lg sm:text-xl lg:text-2xl text-blue-100 mb-8 animate-slide-up leading-relaxed" style="animation-delay: 0.2s">
+            <p class="text-lg sm:text-xl lg:text-2xl text-gray-100 mb-8 animate-slide-up leading-relaxed" style="animation-delay: 0.2s">
               Votre <strong>taxi professionnel aux Sables d'Olonne</strong>. Transport rapide et fiable 24h/24 en Vendée vers gares, aéroports et établissements médicaux.
             </p>
             
             <div class="flex flex-col sm:flex-row gap-4 animate-slide-up" style="animation-delay: 0.4s">
               <a 
                 href="tel:0668314690" 
-                class="inline-flex items-center justify-center px-8 py-4 bg-taxi-yellow hover:bg-yellow-400 text-gray-900 font-bold rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                class="inline-flex items-center justify-center px-8 py-4 bg-taxi-yellow hover:bg-taxi-yellow-hover text-gray-900 font-bold rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                aria-label="Appeler maintenant le taxi au 06 68 31 46 90"
               >
-                <PhoneIcon class="h-5 w-5 mr-2" />
+                <PhoneIcon class="h-5 w-5 mr-2" aria-hidden="true" />
                 Appeler maintenant
               </a>
               <NuxtLink 
                 to="/contact" 
-                class="inline-flex items-center justify-center px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold rounded-xl transition-all duration-200 backdrop-blur-sm"
+                class="inline-flex items-center justify-center px-8 py-4 bg-white/20 hover:bg-white/30 border-2 border-white/40 text-white font-semibold rounded-xl transition-all duration-200 backdrop-blur-sm"
+                aria-label="Aller à la page de contact pour réserver en ligne"
               >
                 Réserver en ligne
-                <ArrowRightIcon class="h-5 w-5 ml-2" />
+                <ArrowRightIcon class="h-5 w-5 ml-2" aria-hidden="true" />
               </NuxtLink>
             </div>
           </div>
@@ -68,7 +70,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12 sm:mb-16">
           <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 px-4">Services de Taxi aux Sables d'Olonne</h2>
-          <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4 leading-relaxed">
+          <p class="text-lg sm:text-xl text-gray-800 max-w-3xl mx-auto px-4 leading-relaxed">
             Transport professionnel en <strong>Vendée</strong> : courses locales, transferts gare SNCF, aéroport Nantes et transport médical conventionné CPAM
           </p>
         </div>
@@ -85,7 +87,7 @@
               {{ service.icon }}
             </div>
             <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-3">{{ service.title }}</h3>
-            <p class="text-sm sm:text-base text-gray-600 leading-relaxed">{{ service.description }}</p>
+            <p class="text-sm sm:text-base text-gray-800 leading-relaxed">{{ service.description }}</p>
           </div>
         </div>
       </div>
@@ -96,7 +98,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12 sm:mb-16">
           <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 px-4">Pourquoi nous choisir ?</h2>
-          <p class="text-lg sm:text-xl text-gray-600 px-4">Votre confiance, notre priorité</p>
+          <p class="text-lg sm:text-xl text-gray-800 px-4">Votre confiance, notre priorité</p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
@@ -110,7 +112,7 @@
               {{ advantage.icon }}
             </div>
             <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-3">{{ advantage.title }}</h3>
-            <p class="text-sm sm:text-base text-gray-600 leading-relaxed">{{ advantage.description }}</p>
+            <p class="text-sm sm:text-base text-gray-800 leading-relaxed">{{ advantage.description }}</p>
           </div>
         </div>
       </div>
@@ -121,13 +123,13 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-8 sm:mb-12">
           <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 px-4">Zones Desservies par notre Taxi</h2>
-          <p class="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8 px-4">Service de taxi professionnel dans toute la Vendée</p>
+          <p class="text-lg sm:text-xl text-gray-700 mb-6 sm:mb-8 px-4">Service de taxi professionnel dans toute la Vendée</p>
         </div>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           <div class="bg-gradient-to-br from-primary-50 to-blue-50 rounded-xl p-4 sm:p-6 text-center">
             <h3 class="font-bold text-gray-900 mb-3 text-sm sm:text-base">Zone Locale</h3>
-            <ul class="text-xs sm:text-sm text-gray-700 space-y-1">
+            <ul class="text-xs sm:text-sm text-gray-800 space-y-1">
               <li>• <strong>Les Sables d'Olonne</strong></li>
               <li>• Olonne-sur-Mer</li>
               <li>• Château d'Olonne</li>
@@ -138,7 +140,7 @@
           
           <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-4 sm:p-6 text-center">
             <h3 class="font-bold text-gray-900 mb-3 text-sm sm:text-base">Transports Gares</h3>
-            <ul class="text-xs sm:text-sm text-gray-700 space-y-1">
+            <ul class="text-xs sm:text-sm text-gray-800 space-y-1">
               <li>• <strong>Gare SNCF Sables d'Olonne</strong></li>
               <li>• Gare TGV La Roche-sur-Yon</li>
               <li>• Gare de Luçon</li>
@@ -149,7 +151,7 @@
           
           <div class="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-xl p-4 sm:p-6 text-center">
             <h3 class="font-bold text-gray-900 mb-3 text-sm sm:text-base">Aéroports</h3>
-            <ul class="text-xs sm:text-sm text-gray-700 space-y-1">
+            <ul class="text-xs sm:text-sm text-gray-800 space-y-1">
               <li>• <strong>Aéroport Nantes Atlantique</strong></li>
               <li>• Terminal 1 & 2</li>
               <li>• Parking longue durée</li>
@@ -160,7 +162,7 @@
           
           <div class="bg-gradient-to-br from-red-50 to-pink-50 rounded-xl p-4 sm:p-6 text-center">
             <h3 class="font-bold text-gray-900 mb-3 text-sm sm:text-base">Établissements Médicaux</h3>
-            <ul class="text-xs sm:text-sm text-gray-700 space-y-1">
+            <ul class="text-xs sm:text-sm text-gray-800 space-y-1">
               <li>• <strong>CHD Vendée La Roche-sur-Yon</strong></li>
               <li>• Clinique Saint-Charles</li>
               <li>• Centre hospitalier Challans</li>
@@ -177,7 +179,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-8 sm:mb-12">
           <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 px-4">Avis Clients - Taxi Les Sables d'Olonne</h2>
-          <p class="text-lg sm:text-xl text-gray-600 px-4">La satisfaction de nos clients, notre priorité</p>
+          <p class="text-lg sm:text-xl text-gray-700 px-4">La satisfaction de nos clients, notre priorité</p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
@@ -185,8 +187,8 @@
             <div class="flex items-center justify-center mb-4">
               <div class="text-yellow-400 text-base sm:text-lg">★★★★★</div>
             </div>
-            <p class="text-sm sm:text-base text-gray-700 mb-4 italic leading-relaxed">"Service impeccable pour mes rendez-vous médicaux. Chauffeur ponctuel et véhicule très propre. Je recommande !"</p>
-            <div class="text-xs sm:text-sm text-gray-600">
+            <p class="text-sm sm:text-base text-gray-800 mb-4 italic leading-relaxed">"Service impeccable pour mes rendez-vous médicaux. Chauffeur ponctuel et véhicule très propre. Je recommande !"</p>
+            <div class="text-xs sm:text-sm text-gray-700">
               <strong>Marie D.</strong> - Transport médical
             </div>
           </div>
@@ -195,8 +197,8 @@
             <div class="flex items-center justify-center mb-4">
               <div class="text-yellow-400 text-base sm:text-lg">★★★★★</div>
             </div>
-            <p class="text-sm sm:text-base text-gray-700 mb-4 italic leading-relaxed">"Excellent taxi pour l'aéroport de Nantes. Suivi du vol en temps réel, aucun stress. Tarif transparent annoncé à l'avance."</p>
-            <div class="text-xs sm:text-sm text-gray-600">
+            <p class="text-sm sm:text-base text-gray-800 mb-4 italic leading-relaxed">"Excellent taxi pour l'aéroport de Nantes. Suivi du vol en temps réel, aucun stress. Tarif transparent annoncé à l'avance."</p>
+            <div class="text-xs sm:text-sm text-gray-700">
               <strong>Jean-Pierre L.</strong> - Transfert aéroport
             </div>
           </div>
@@ -205,8 +207,8 @@
             <div class="flex items-center justify-center mb-4">
               <div class="text-yellow-400 text-base sm:text-lg">★★★★★</div>
             </div>
-            <p class="text-sm sm:text-base text-gray-700 mb-4 italic leading-relaxed">"Service 24h/24 très pratique. Intervention rapide même tard le soir. Chauffeur professionnel et courtois."</p>
-            <div class="text-xs sm:text-sm text-gray-600">
+            <p class="text-sm sm:text-base text-gray-800 mb-4 italic leading-relaxed">"Service 24h/24 très pratique. Intervention rapide même tard le soir. Chauffeur professionnel et courtois."</p>
+            <div class="text-xs sm:text-sm text-gray-700">
               <strong>Sophie M.</strong> - Course de nuit
             </div>
           </div>
@@ -218,7 +220,7 @@
     <section class="py-12 sm:py-16 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 px-4">Votre Taxi de Confiance aux Sables d'Olonne et en Vendée</h2>
-        <div class="max-w-4xl mx-auto text-gray-700 leading-relaxed px-4">
+        <div class="max-w-4xl mx-auto text-gray-800 leading-relaxed px-4">
           <p class="mb-4 sm:mb-6 text-sm sm:text-base">
             <strong>Taxi Les Sables d'Olonne</strong> est votre partenaire transport de confiance en <strong>Vendée</strong>. Situés <strong>Place Napoléon III aux Sables d'Olonne</strong>, nous assurons vos déplacements 24h/24 et 7j/7 vers toutes destinations.
           </p>
@@ -238,20 +240,22 @@
         <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 px-4">
           Réservez votre Taxi aux Sables d'Olonne
         </h2>
-        <p class="text-lg sm:text-xl text-blue-100 mb-6 sm:mb-8 max-w-2xl mx-auto px-4 leading-relaxed">
+        <p class="text-lg sm:text-xl text-gray-100 mb-6 sm:mb-8 max-w-2xl mx-auto px-4 leading-relaxed">
           <strong>Service 24h/24</strong> • Réservation immédiate au <strong>06 68 31 46 90</strong> • Transport médical, gare SNCF, aéroport Nantes • Tarifs réglementés Vendée
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center px-4">
           <a 
             href="tel:0668314690" 
-            class="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-taxi-yellow hover:bg-yellow-400 text-gray-900 font-bold rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg text-sm sm:text-base"
+            class="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-taxi-yellow hover:bg-taxi-yellow-hover text-gray-900 font-bold rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg text-sm sm:text-base"
+            aria-label="Appeler le taxi au 06 68 31 46 90"
           >
-            <PhoneIcon class="h-4 sm:h-5 w-4 sm:w-5 mr-2" />
+            <PhoneIcon class="h-4 sm:h-5 w-4 sm:w-5 mr-2" aria-hidden="true" />
             06 68 31 46 90
           </a>
           <NuxtLink 
             to="/contact" 
-            class="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold rounded-xl transition-all duration-200 backdrop-blur-sm text-sm sm:text-base"
+            class="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-white/20 hover:bg-white/30 border-2 border-white/40 text-white font-semibold rounded-xl transition-all duration-200 backdrop-blur-sm text-sm sm:text-base"
+            aria-label="Aller à la page de contact pour réserver en ligne"
           >
             Réserver en ligne
           </NuxtLink>
