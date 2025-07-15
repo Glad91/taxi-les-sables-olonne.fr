@@ -213,61 +213,61 @@ const pricingCategories = [
 useSchemaOrg([
   defineOffer({
     '@type': 'Offer',
-    name: 'Tarifs Taxi Les Sables d\'Olonne',
-    description: 'Tarifs réglementés et forfaits fixes pour tous nos services de transport. Prix transparents conformes à la réglementation Vendée.',
-    url: 'https://www.taxi-les-sables-olonne.fr/tarifs',
-    priceCurrency: 'EUR',
-    priceRange: '2.90-230',
-    validFrom: '2025-01-01',
-    validThrough: '2025-12-31',
-    seller: {
+    'name': 'Tarifs Taxi Les Sables d\'Olonne',
+    'description': 'Tarifs réglementés et forfaits fixes pour tous nos services de transport. Prix transparents conformes à la réglementation Vendée.',
+    'url': 'https://www.taxi-les-sables-olonne.fr/tarifs',
+    'priceCurrency': 'EUR',
+    'priceRange': '2.90-230',
+    'validFrom': '2025-01-01',
+    'validThrough': '2025-12-31',
+    'seller': {
       '@type': 'LocalBusiness',
-      name: 'Taxi Les Sables d\'Olonne',
-      telephone: '+33668314690',
-      url: 'https://www.taxi-les-sables-olonne.fr'
+      'name': 'Taxi Les Sables d\'Olonne',
+      'telephone': '+33668314690',
+      'url': 'https://www.taxi-les-sables-olonne.fr',
     },
-    itemOffered: [
+    'itemOffered': [
       {
         '@type': 'Service',
-        name: 'Transport local réglementé',
-        description: 'Tarifs officiels Vendée : prise en charge 2,90€, tarif A 2,16€/km, tarif B 3,24€/km'
+        'name': 'Transport local réglementé',
+        'description': 'Tarifs officiels Vendée : prise en charge 2,90€, tarif A 2,16€/km, tarif B 3,24€/km',
       },
       {
         '@type': 'Service',
-        name: 'Forfait Aéroport Nantes',
-        description: 'Transfert vers aéroport Nantes Atlantique',
-        offers: {
+        'name': 'Forfait Aéroport Nantes',
+        'description': 'Transfert vers aéroport Nantes Atlantique',
+        'offers': {
           '@type': 'Offer',
-          price: '230',
-          priceCurrency: 'EUR',
-          description: 'Prix fixe dès 230€'
-        }
+          'price': '230',
+          'priceCurrency': 'EUR',
+          'description': 'Prix fixe dès 230€',
+        },
       },
       {
         '@type': 'Service',
-        name: 'Forfait Aéroport La Rochelle',
-        description: 'Transfert vers aéroport La Rochelle-Île de Ré',
-        offers: {
+        'name': 'Forfait Aéroport La Rochelle',
+        'description': 'Transfert vers aéroport La Rochelle-Île de Ré',
+        'offers': {
           '@type': 'Offer',
-          price: '220',
-          priceCurrency: 'EUR',
-          description: 'Prix fixe dès 220€'
-        }
+          'price': '220',
+          'priceCurrency': 'EUR',
+          'description': 'Prix fixe dès 220€',
+        },
       },
       {
         '@type': 'Service',
-        name: 'Transport médical conventionné',
-        description: 'Prise en charge CPAM selon droits et prescription médicale'
-      }
+        'name': 'Transport médical conventionné',
+        'description': 'Prise en charge CPAM selon droits et prescription médicale',
+      },
     ],
-    paymentAccepted: ['Cash', 'CreditCard'],
-    priceValidUntil: '2025-12-31',
-    areaServed: {
+    'paymentAccepted': ['Cash', 'CreditCard'],
+    'priceValidUntil': '2025-12-31',
+    'areaServed': {
       '@type': 'City',
-      name: 'Les Sables d\'Olonne',
-      addressCountry: 'FR'
-    }
-  })
+      'name': 'Les Sables d\'Olonne',
+      'addressCountry': 'FR',
+    },
+  }),
 ])
 
 useSeoMeta({

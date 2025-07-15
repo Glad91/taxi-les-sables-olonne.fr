@@ -571,49 +571,49 @@ const submitForm = async () => {
 useSchemaOrg([
   {
     '@type': 'ContactPage',
-    name: 'Contact Taxi Les Sables d\'Olonne',
-    description: 'Page de contact pour réservations et informations. Service 24h/24, transport médical, navettes aéroport et gare.',
-    url: 'https://www.taxi-les-sables-olonne.fr/contact',
-    mainEntity: {
+    'name': 'Contact Taxi Les Sables d\'Olonne',
+    'description': 'Page de contact pour réservations et informations. Service 24h/24, transport médical, navettes aéroport et gare.',
+    'url': 'https://www.taxi-les-sables-olonne.fr/contact',
+    'mainEntity': {
       '@type': 'LocalBusiness',
-      name: 'Taxi Les Sables d\'Olonne',
-      telephone: '+33668314690',
-      email: 'contact@taxi-les-sables-olonne.fr',
-      address: {
+      'name': 'Taxi Les Sables d\'Olonne',
+      'telephone': '+33668314690',
+      'email': 'contact@taxi-les-sables-olonne.fr',
+      'address': {
         '@type': 'PostalAddress',
-        streetAddress: 'Place Napoléon III',
-        addressLocality: 'Les Sables d\'Olonne',
-        postalCode: '85100',
-        addressCountry: 'FR'
+        'streetAddress': 'Place Napoléon III',
+        'addressLocality': 'Les Sables d\'Olonne',
+        'postalCode': '85100',
+        'addressCountry': 'FR',
       },
-      openingHours: 'Mo-Su 00:00-23:59',
-      contactPoint: [
+      'openingHours': 'Mo-Su 00:00-23:59',
+      'contactPoint': [
         {
           '@type': 'ContactPoint',
-          telephone: '+33668314690',
-          contactType: 'réservations',
-          areaServed: 'FR',
-          availableLanguage: 'French',
-          hoursAvailable: 'Mo-Su 00:00-23:59'
+          'telephone': '+33668314690',
+          'contactType': 'réservations',
+          'areaServed': 'FR',
+          'availableLanguage': 'French',
+          'hoursAvailable': 'Mo-Su 00:00-23:59',
         },
         {
           '@type': 'ContactPoint',
-          email: 'contact@taxi-les-sables-olonne.fr',
-          contactType: 'customer service',
-          areaServed: 'FR',
-          availableLanguage: 'French'
-        }
-      ]
+          'email': 'contact@taxi-les-sables-olonne.fr',
+          'contactType': 'customer service',
+          'areaServed': 'FR',
+          'availableLanguage': 'French',
+        },
+      ],
     },
-    potentialAction: {
+    'potentialAction': {
       '@type': 'CommunicateAction',
-      target: {
+      'target': {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://www.taxi-les-sables-olonne.fr/contact',
-        actionPlatform: 'http://schema.org/WebSite'
-      }
-    }
-  }
+        'urlTemplate': 'https://www.taxi-les-sables-olonne.fr/contact',
+        'actionPlatform': 'http://schema.org/WebSite',
+      },
+    },
+  },
 ])
 
 useSeoMeta({

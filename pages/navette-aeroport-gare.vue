@@ -111,58 +111,58 @@ import { PhoneIcon, TruckIcon, CheckIcon } from '@heroicons/vue/24/outline'
 useSchemaOrg([
   {
     '@type': 'Service',
-    name: 'Navette Gare & Aéroport',
-    description: 'Service de navette taxi spécialisé vers gares SNCF et aéroports. Tarifs fixes, ponctualité garantie et suivi en temps réel.',
-    url: 'https://www.taxi-les-sables-olonne.fr/navette-aeroport-gare',
-    provider: {
+    'name': 'Navette Gare & Aéroport',
+    'description': 'Service de navette taxi spécialisé vers gares SNCF et aéroports. Tarifs fixes, ponctualité garantie et suivi en temps réel.',
+    'url': 'https://www.taxi-les-sables-olonne.fr/navette-aeroport-gare',
+    'provider': {
       '@type': 'LocalBusiness',
-      name: 'Taxi Les Sables d\'Olonne',
-      telephone: '+33668314690',
-      url: 'https://www.taxi-les-sables-olonne.fr'
+      'name': 'Taxi Les Sables d\'Olonne',
+      'telephone': '+33668314690',
+      'url': 'https://www.taxi-les-sables-olonne.fr',
     },
-    serviceType: ['Navette aéroport', 'Navette gare'],
-    areaServed: [
+    'serviceType': ['Navette aéroport', 'Navette gare'],
+    'areaServed': [
       'Les Sables d\'Olonne',
       'Aéroport Nantes Atlantique',
       'Gare SNCF Les Sables d\'Olonne',
-      'Gare TGV La Roche-sur-Yon'
+      'Gare TGV La Roche-sur-Yon',
     ],
-    availableService: [
+    'availableService': [
       'Transfert aéroport Nantes',
       'Transfert gare SNCF',
       'Suivi horaires temps réel',
       'Accueil personnalisé',
-      'Aide aux bagages'
+      'Aide aux bagages',
     ],
-    serviceOutput: {
+    'serviceOutput': {
       '@type': 'Service',
-      name: 'Transport sécurisé et ponctuel',
-      description: 'Arrivée garantie à l\'heure pour vos vols et trains'
+      'name': 'Transport sécurisé et ponctuel',
+      'description': 'Arrivée garantie à l\'heure pour vos vols et trains',
     },
-    offers: [
+    'offers': [
       {
         '@type': 'Offer',
-        name: 'Navette Aéroport Nantes',
-        description: 'Transfert vers/depuis aéroport Nantes Atlantique',
-        price: '230',
-        priceCurrency: 'EUR',
-        seller: {
+        'name': 'Navette Aéroport Nantes',
+        'description': 'Transfert vers/depuis aéroport Nantes Atlantique',
+        'price': '230',
+        'priceCurrency': 'EUR',
+        'seller': {
           '@type': 'LocalBusiness',
-          name: 'Taxi Les Sables d\'Olonne'
-        }
+          'name': 'Taxi Les Sables d\'Olonne',
+        },
       },
       {
         '@type': 'Offer',
-        name: 'Navette Gare SNCF',
-        description: 'Transfert vers/depuis gares SNCF et TGV',
-        priceCurrency: 'EUR',
-        seller: {
+        'name': 'Navette Gare SNCF',
+        'description': 'Transfert vers/depuis gares SNCF et TGV',
+        'priceCurrency': 'EUR',
+        'seller': {
           '@type': 'LocalBusiness',
-          name: 'Taxi Les Sables d\'Olonne'
-        }
-      }
-    ]
-  }
+          'name': 'Taxi Les Sables d\'Olonne',
+        },
+      },
+    ],
+  },
 ])
 
 useSeoMeta({

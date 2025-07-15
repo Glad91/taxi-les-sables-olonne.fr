@@ -142,24 +142,24 @@ import { PhoneIcon, HeartIcon, CheckIcon } from '@heroicons/vue/24/outline'
 useSchemaOrg([
   {
     '@type': 'MedicalService',
-    name: 'Transport Médical Conventionné CPAM',
-    description: 'Service de taxi conventionné par la CPAM pour tous vos transports médicaux. Prise en charge directe selon prescription médicale.',
-    url: 'https://www.taxi-les-sables-olonne.fr/transport-medical',
-    provider: {
+    'name': 'Transport Médical Conventionné CPAM',
+    'description': 'Service de taxi conventionné par la CPAM pour tous vos transports médicaux. Prise en charge directe selon prescription médicale.',
+    'url': 'https://www.taxi-les-sables-olonne.fr/transport-medical',
+    'provider': {
       '@type': 'LocalBusiness',
-      name: 'Taxi Les Sables d\'Olonne',
-      telephone: '+33668314690',
-      url: 'https://www.taxi-les-sables-olonne.fr'
+      'name': 'Taxi Les Sables d\'Olonne',
+      'telephone': '+33668314690',
+      'url': 'https://www.taxi-les-sables-olonne.fr',
     },
-    serviceType: 'Transport médical conventionné',
-    medicalSpecialty: 'Transport sanitaire',
-    areaServed: [
+    'serviceType': 'Transport médical conventionné',
+    'medicalSpecialty': 'Transport sanitaire',
+    'areaServed': [
       'Les Sables d\'Olonne',
       'Vendée',
       'CHD Vendée La Roche-sur-Yon',
-      'Clinique Saint-Charles'
+      'Clinique Saint-Charles',
     ],
-    availableService: [
+    'availableService': [
       'Consultations médicales',
       'Hospitalisations',
       'Traitements en série',
@@ -167,21 +167,21 @@ useSchemaOrg([
       'Chimiothérapie',
       'Dialyse',
       'Kinésithérapie',
-      'Transport CMPP'
+      'Transport CMPP',
     ],
-    paymentAccepted: ['CPAM', 'Tiers payant'],
-    isAcceptingNewPatients: true,
-    offers: {
+    'paymentAccepted': ['CPAM', 'Tiers payant'],
+    'isAcceptingNewPatients': true,
+    'offers': {
       '@type': 'Offer',
-      name: 'Transport conventionné CPAM',
-      description: 'Prise en charge selon prescription médicale et droits CPAM',
-      priceCurrency: 'EUR',
-      seller: {
+      'name': 'Transport conventionné CPAM',
+      'description': 'Prise en charge selon prescription médicale et droits CPAM',
+      'priceCurrency': 'EUR',
+      'seller': {
         '@type': 'LocalBusiness',
-        name: 'Taxi Les Sables d\'Olonne'
-      }
-    }
-  }
+        'name': 'Taxi Les Sables d\'Olonne',
+      },
+    },
+  },
 ])
 
 useSeoMeta({

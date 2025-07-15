@@ -483,16 +483,16 @@ useSchemaOrg([
     paymentAccepted: ['Cash', 'CreditCard'],
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Place Napoléon III',
-      addressLocality: 'Les Sables d\'Olonne',
-      postalCode: '85100',
-      addressCountry: 'FR',
-      addressRegion: 'Vendée'
+      'streetAddress': 'Place Napoléon III',
+      'addressLocality': 'Les Sables d\'Olonne',
+      'postalCode': '85100',
+      'addressCountry': 'FR',
+      'addressRegion': 'Vendée',
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 46.4958,
-      longitude: -1.7833
+      'latitude': 46.4958,
+      'longitude': -1.7833,
     },
     openingHours: 'Mo-Su 00:00-23:59',
     areaServed: [
@@ -500,45 +500,45 @@ useSchemaOrg([
       'Olonne-sur-Mer',
       'Château d\'Olonne',
       'La Chaume',
-      'Vendée'
+      'Vendée',
     ],
     serviceType: [
       'Taxi local',
       'Transport médical',
       'Navette aéroport',
-      'Navette gare'
+      'Navette gare',
     ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Services de Transport',
-      itemListElement: [
+      'name': 'Services de Transport',
+      'itemListElement': [
         {
           '@type': 'Offer',
-          itemOffered: {
+          'itemOffered': {
             '@type': 'Service',
-            name: 'Transport médical conventionné CPAM',
-            description: 'Service de transport médical agréé par la CPAM'
-          }
+            'name': 'Transport médical conventionné CPAM',
+            'description': 'Service de transport médical agréé par la CPAM',
+          },
         },
         {
           '@type': 'Offer',
-          itemOffered: {
+          'itemOffered': {
             '@type': 'Service',
-            name: 'Navette aéroport Nantes',
-            description: 'Transfert vers l\'aéroport de Nantes Atlantique'
-          }
+            'name': 'Navette aéroport Nantes',
+            'description': 'Transfert vers l\'aéroport de Nantes Atlantique',
+          },
         },
         {
           '@type': 'Offer',
-          itemOffered: {
+          'itemOffered': {
             '@type': 'Service',
-            name: 'Navette gare SNCF',
-            description: 'Transfert vers les gares SNCF et TGV'
-          }
-        }
-      ]
-    }
-  })
+            'name': 'Navette gare SNCF',
+            'description': 'Transfert vers les gares SNCF et TGV',
+          },
+        },
+      ],
+    },
+  }),
 ])
 
 useSeoMeta({
