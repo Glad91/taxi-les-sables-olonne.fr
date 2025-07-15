@@ -31,6 +31,7 @@ export default defineEventHandler(async (event) => {
     }
   }
   catch (error) {
+    // eslint-disable-next-line no-console
     console.error('Erreur lors du formatage de la date:', error)
   }
 
@@ -111,6 +112,7 @@ export default defineEventHandler(async (event) => {
     return { success: true, message: 'Email envoyé avec succès' }
   }
   catch (error) {
+    // eslint-disable-next-line no-console
     console.error('Erreur lors de l\'envoi de l\'e-mail:', error)
     throw createError({
       statusCode: 500,

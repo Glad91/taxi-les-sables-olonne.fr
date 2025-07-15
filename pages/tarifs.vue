@@ -148,6 +148,7 @@
           <a
             href="tel:0668314690"
             class="inline-flex items-center px-8 py-4 bg-taxi-yellow hover:bg-taxi-yellow-hover text-gray-900 font-bold rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg"
+            @click="trackCall('pricing_page')"
           >
             <PhoneIcon class="h-5 w-5 mr-2" />
             Appeler pour un devis
@@ -174,6 +175,14 @@ import {
   InformationCircleIcon,
 } from '@heroicons/vue/24/outline'
 import { defineOffer } from 'nuxt-schema-org/schema'
+
+// GTM tracking
+const { trackCall, trackPageView } = useGTM()
+
+// Tracker la page vue
+onMounted(() => {
+  trackPageView('pricing')
+})
 
 const pricingCategories = [
   {
@@ -214,7 +223,8 @@ useSchemaOrg([
   defineOffer({
     '@type': 'Offer',
     'name': 'Tarifs Taxi Les Sables d\'Olonne',
-    'description': 'Tarifs réglementés et forfaits fixes pour tous nos services de transport. Prix transparents conformes à la réglementation Vendée.',
+    'description':
+        'Tarifs réglementés et forfaits fixes pour tous nos services de transport. Prix transparents conformes à la réglementation Vendée.',
     'url': 'https://www.taxi-les-sables-olonne.fr/tarifs',
     'priceCurrency': 'EUR',
     'priceRange': '2.90-230',
@@ -230,7 +240,8 @@ useSchemaOrg([
       {
         '@type': 'Service',
         'name': 'Transport local réglementé',
-        'description': 'Tarifs officiels Vendée : prise en charge 2,90€, tarif A 2,16€/km, tarif B 3,24€/km',
+        'description':
+            'Tarifs officiels Vendée : prise en charge 2,90€, tarif A 2,16€/km, tarif B 3,24€/km',
       },
       {
         '@type': 'Service',

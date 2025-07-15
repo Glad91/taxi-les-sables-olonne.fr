@@ -62,6 +62,7 @@
             href="tel:0668314690"
             class="bg-primary-600 hover:bg-primary-700 text-white px-3 sm:px-4 py-2 rounded-lg font-medium transition-all duration-200 flex items-center space-x-1 sm:space-x-2 shadow-lg hover:shadow-xl text-sm sm:text-base"
             aria-label="Appeler le taxi au 06 68 31 46 90"
+            @click="trackCall('header_desktop')"
           >
             <PhoneIcon
               class="h-4 w-4"
@@ -78,6 +79,7 @@
             href="tel:0668314690"
             class="bg-primary-600 hover:bg-primary-700 text-white p-2 rounded-lg transition-all duration-200 shadow-lg"
             aria-label="Appeler le taxi au 06 68 31 46 90"
+            @click="trackCall('header_mobile')"
           >
             <PhoneIcon
               class="h-5 w-5"
@@ -163,6 +165,7 @@
             href="tel:0668314690"
             class="block bg-primary-600 hover:bg-primary-700 text-white px-4 py-3 rounded-lg font-medium transition-colors text-center mt-4"
             aria-label="Appeler le taxi au 06 68 31 46 90"
+            @click="trackCall('mobile_menu')"
           >
             <span aria-hidden="true">📞</span>
             06 68 31 46 90
@@ -177,6 +180,9 @@
 import { PhoneIcon, Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/vue/24/outline'
 
 const mobileMenuOpen = ref(false)
+
+// GTM tracking
+const { trackCall } = useGTM()
 
 const navigation = [
   { name: 'Accueil', href: '/' },
