@@ -141,7 +141,7 @@
         <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
           Besoin d'un devis personnalisé ?
         </h2>
-        <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+        <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
           Contactez-nous pour obtenir un devis gratuit et sans engagement pour votre trajet.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">

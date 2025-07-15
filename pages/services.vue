@@ -180,7 +180,7 @@
         <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
           Prêt à réserver votre course ?
         </h2>
-        <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+        <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
           Contactez-nous dès maintenant pour tous vos besoins de transport. Service rapide et
           professionnel garanti.
         </p>

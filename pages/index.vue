@@ -387,7 +387,7 @@
           Réservez votre Taxi aux Sables d'Olonne
         </h2>
         <p
-          class="text-lg sm:text-xl text-gray-200 mb-6 sm:mb-8 max-w-2xl mx-auto px-4 leading-relaxed"
+          class="text-lg sm:text-xl text-gray-100 mb-6 sm:mb-8 max-w-2xl mx-auto px-4 leading-relaxed"
         >
           <strong>Service 24h/24</strong>
           • Réservation immédiate au
