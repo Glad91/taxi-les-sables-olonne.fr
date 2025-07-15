@@ -1,5 +1,4 @@
 import { defineNuxtConfig } from 'nuxt/config'
-import { defineOrganization } from 'nuxt-schema-org/schema'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -66,34 +65,6 @@ export default defineNuxtConfig({
   },
   schemaOrg: {
     host: 'https://www.taxi-les-sables-olonne.fr',
-    identity: defineOrganization({
-      name: 'Taxi Les Sables d\'Olonne',
-      legalName: 'Taxi Les Sables d\'Olonne',
-      url: 'https://www.taxi-les-sables-olonne.fr',
-      logo: 'https://www.taxi-les-sables-olonne.fr/favicon.svg',
-      description: 'Service de taxi professionnel aux Sables d\'Olonne et en Vendée. Transport médical conventionné, liaisons gare-aéroport, courses locales et longues distances.',
-      telephone: '+33668314690',
-      email: 'contact@taxi-les-sables-olonne.fr',
-      contactPoint: {
-        '@type': 'ContactPoint',
-        telephone: '+33668314690',
-        contactType: 'customer service',
-        areaServed: 'FR',
-        availableLanguage: 'French',
-      },
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'Place Napoléon III',
-        addressLocality: 'Les Sables d\'Olonne',
-        postalCode: '85100',
-        addressCountry: 'FR',
-      },
-      sameAs: [
-        // Ajoutez vos réseaux sociaux réels ici
-        // 'https://www.facebook.com/votrepage',
-        // 'https://www.linkedin.com/votrepage',
-      ],
-    }),
   },
   seo: {
     // Options globales pour le module SEO
