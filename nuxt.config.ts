@@ -1,41 +1,26 @@
+import { defineNuxtConfig } from 'nuxt/config'
+import { defineOrganization } from 'nuxt-schema-org/schema'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-05-15',
-  devtools: { enabled: true },
+  modules: ['@nuxtjs/google-fonts', '@nuxtjs/seo', '@nuxtjs/tailwindcss', '@nuxt/image'],
   ssr: true,
-  modules: [
-    '@nuxtjs/google-fonts',
-    '@nuxtjs/seo',
-    '@nuxtjs/tailwindcss',
-    '@nuxt/image'
-  ],
-  googleFonts: {
-    families: {
-      'Inter': [400, 500, 600, 700],
-      'Poppins': [400, 500, 600, 700]
-    },
-    display: 'swap'
-  },
-  nitro: {
-    prerender: {
-      routes: ['/sitemap.xml']
-    }
-  },
+  devtools: { enabled: true },
   app: {
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: 'Taxi Les Sables d\'Olonne - Service 24h/24 en Vendée',
+      // Le titre et la description par défaut seront gérés par le module SEO via la config `site`
+      // et `useSeoMeta` dans les pages individuelles.
+      title: 'Taxi Les Sables d\'Olonne',
       meta: [
-        { name: 'description', content: 'Taxi Les Sables d\'Olonne - Service 24h/24 en Vendée. Transport médical conventionné, liaisons gare-aéroport. Réservation 06 68 31 46 90. Place Napoléon III.' },
-        { name: 'keywords', content: 'taxi les sables olonne, taxi sables d olonne, taxi vendée, transport médical sables olonne, gare sables olonne, aéroport nantes taxi' },
+        {
+          name: 'description',
+          content: 'Votre service de taxi de confiance aux Sables d\'Olonne et en Vendée.',
+        },
         { name: 'theme-color', content: '#007bff' },
-        { property: 'og:title', content: 'Taxi Les Sables d\'Olonne - Service 24h/24 en Vendée' },
-        { property: 'og:description', content: 'Taxi Les Sables d\'Olonne - Service 24h/24. Transport médical conventionné, liaisons gare-aéroport. 06 68 31 46 90.' },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'https://www.taxi-les-sables-olonne.fr' },
-        { property: 'og:site_name', content: 'Taxi Les Sables d\'Olonne' },
-        { name: 'twitter:card', content: 'summary_large_image' }
+        // Les balises Open Graph et Twitter Card seront générées par le module SEO
+        // si elles ne sont pas spécifiées via useSeoMeta dans les pages.
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -45,11 +30,86 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', sizes: '48x48', href: '/favicon-48x48.png' },
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicon-256x256.png' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
-      ]
-    }
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+      ],
+    },
   },
-  css: [
-    '~/assets/css/accessibility.css'
-  ]
+  css: ['~/assets/css/accessibility.css'],
+  site: {
+    url: 'https://www.taxi-les-sables-olonne.fr',
+    name: 'Taxi Les Sables d\'Olonne',
+    description:
+      'Votre service de taxi de confiance aux Sables d\'Olonne et en Vendée. Transport médical conventionné, liaisons gare-aéroport, courses locales et longues distances.',
+    defaultLocale: 'fr', // default locale of your site
+  },
+  runtimeConfig: {
+    emailSmtpHost: process.env.NUXT_EMAIL_SMTP_HOST,
+    emailSmtpPort: process.env.NUXT_EMAIL_SMTP_PORT,
+    emailSmtpUser: process.env.NUXT_EMAIL_SMTP_USER,
+    emailSmtpPassword: process.env.NUXT_EMAIL_SMTP_PASSWORD,
+    public: {
+      emailSender: process.env.NUXT_PUBLIC_EMAIL_SENDER,
+    },
+  },
+  compatibilityDate: '2025-05-15',
+  nitro: {
+    prerender: {
+      routes: ['/sitemap.xml'],
+    },
+  },
+  googleFonts: {
+    families: {
+      Inter: [400, 500, 600, 700],
+      Poppins: [400, 500, 600, 700],
+    },
+    display: 'swap',
+  },
+  schemaOrg: {
+    host: 'https://www.taxi-les-sables-olonne.fr',
+    identity: defineOrganization({
+      name: 'Taxi Les Sables d\'Olonne',
+      legalName: 'Taxi Les Sables d\'Olonne',
+      url: 'https://www.taxi-les-sables-olonne.fr',
+      logo: 'https://www.taxi-les-sables-olonne.fr/favicon.svg',
+      description: 'Service de taxi professionnel aux Sables d\'Olonne et en Vendée. Transport médical conventionné, liaisons gare-aéroport, courses locales et longues distances.',
+      telephone: '+33668314690',
+      email: 'contact@taxi-les-sables-olonne.fr',
+      contactPoint: {
+        '@type': 'ContactPoint',
+        telephone: '+33668314690',
+        contactType: 'customer service',
+        areaServed: 'FR',
+        availableLanguage: 'French',
+      },
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Place Napoléon III',
+        addressLocality: 'Les Sables d\'Olonne',
+        postalCode: '85100',
+        addressCountry: 'FR',
+      },
+      sameAs: [
+        // Ajoutez vos réseaux sociaux réels ici
+        // 'https://www.facebook.com/votrepage',
+        // 'https://www.linkedin.com/votrepage',
+      ],
+    }),
+  },
+  seo: {
+    // Options globales pour le module SEO
+    // Activer le sitemap et robots.txt automatiques
+    sitemap: {
+      enabled: true,
+      // Plus d\'options si nécessaire
+    },
+    robots: {
+      enabled: true,
+      // Plus d\'options si nécessaire
+    },
+    // Activer le vérificateur de liens (utile en dev/build)
+    linkChecker: {
+      enabled: true,
+      // Plus d\'options si nécessaire
+    },
+  },
 })

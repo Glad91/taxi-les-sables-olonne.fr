@@ -12,20 +12,28 @@
             <span class="text-xl font-bold">Taxi Les Sables d'Olonne</span>
           </div>
           <p class="text-gray-300 text-sm">
-            Votre service de taxi de confiance aux Sables d'Olonne et dans toute la Vendée. 
+            Votre service de taxi de confiance aux Sables d'Olonne et dans toute la Vendée.
             Transport médical conventionné et liaisons longue distance.
           </p>
         </div>
 
         <!-- Contact rapide -->
         <div class="space-y-4">
-          <h3 class="text-lg font-semibold text-taxi-yellow">Contact</h3>
+          <h3 class="text-lg font-semibold text-taxi-yellow">
+            Contact
+          </h3>
           <div class="space-y-2 text-sm">
-            <a href="tel:0668314690" class="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors">
+            <a
+              href="tel:0668314690"
+              class="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
+            >
               <PhoneIcon class="h-4 w-4" />
               <span>06 68 31 46 90</span>
             </a>
-            <a href="mailto:contact@taxi-sables-olonne.fr" class="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors">
+            <a
+              href="mailto:contact@taxi-sables-olonne.fr"
+              class="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
+            >
               <EnvelopeIcon class="h-4 w-4" />
               <span>contact@taxi-sables-olonne.fr</span>
             </a>
@@ -38,7 +46,9 @@
 
         <!-- Zone de service -->
         <div class="space-y-4">
-          <h3 class="text-lg font-semibold text-taxi-yellow">Zone de service</h3>
+          <h3 class="text-lg font-semibold text-taxi-yellow">
+            Zone de service
+          </h3>
           <ul class="space-y-1 text-sm text-gray-300">
             <li>Place Napoléon III, Les Sables d'Olonne</li>
             <li>Olonne-sur-Mer</li>
@@ -50,7 +60,9 @@
 
         <!-- Services -->
         <div class="space-y-4">
-          <h3 class="text-lg font-semibold text-taxi-yellow">Services</h3>
+          <h3 class="text-lg font-semibold text-taxi-yellow">
+            Services
+          </h3>
           <ul class="space-y-1 text-sm text-gray-300">
             <li>Transport médical conventionné</li>
             <li>Liaison gare-aéroport</li>
@@ -66,8 +78,18 @@
         <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
           <p>&copy; 2025 Taxi Les Sables d'Olonne. Tous droits réservés.</p>
           <div class="flex space-x-4 mt-4 md:mt-0">
-            <NuxtLink to="/mentions-legales" class="hover:text-white transition-colors">Mentions légales</NuxtLink>
-            <NuxtLink to="/confidentialite" class="hover:text-white transition-colors">Confidentialité</NuxtLink>
+            <NuxtLink
+              to="/mentions-legales"
+              class="hover:text-white transition-colors"
+            >
+              Mentions légales
+            </NuxtLink>
+            <NuxtLink
+              to="/confidentialite"
+              class="hover:text-white transition-colors"
+            >
+              Confidentialité
+            </NuxtLink>
           </div>
         </div>
       </div>

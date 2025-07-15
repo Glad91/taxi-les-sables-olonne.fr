@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./components/**/*.{js,vue,ts}",
-    "./layouts/**/*.vue",
-    "./pages/**/*.vue",
-    "./plugins/**/*.{js,ts}",
-    "./app.vue",
-    "./error.vue"
+    './components/**/*.{js,vue,ts}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './app.vue',
+    './error.vue',
   ],
   theme: {
     extend: {
@@ -24,12 +24,12 @@ module.exports = {
           900: '#1e3a8a',
         },
         taxi: {
-          yellow: '#f59e0b', // Plus foncé pour meilleur contraste
+          'yellow': '#f59e0b', // Plus foncé pour meilleur contraste
           'yellow-hover': '#d97706',
-          blue: '#1d4ed8', // Plus foncé pour meilleur contraste
-          dark: '#111827', // Plus foncé
-          light: '#f9fafb'
-        }
+          'blue': '#1d4ed8', // Plus foncé pour meilleur contraste
+          'dark': '#111827', // Plus foncé
+          'light': '#f9fafb',
+        },
       },
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui'],
