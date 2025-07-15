@@ -180,7 +180,7 @@
         <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
           Prêt à réserver votre course ?
         </h2>
-        <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
+        <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
           Contactez-nous dès maintenant pour tous vos besoins de transport. Service rapide et
           professionnel garanti.
         </p>
@@ -198,7 +198,7 @@
           </a>
           <NuxtLink
             to="/contact"
-            class="inline-flex items-center px-8 py-4 bg-white/20 hover:bg-white/30 border-2 border-white/40 text-white font-semibold rounded-xl transition-all duration-200 backdrop-blur-sm"
+            class="inline-flex items-center px-8 py-4 bg-white hover:bg-gray-100 border-2 border-white text-primary-600 font-semibold rounded-xl transition-all duration-200"
             aria-label="Aller au formulaire de contact"
           >
             Formulaire de contact
@@ -209,7 +209,7 @@
           </NuxtLink>
           <NuxtLink
             to="/tarifs"
-            class="inline-flex items-center px-8 py-4 bg-white/20 hover:bg-white/30 border-2 border-white/40 text-white font-semibold rounded-xl transition-all duration-200 backdrop-blur-sm"
+            class="inline-flex items-center px-8 py-4 bg-white hover:bg-gray-100 border-2 border-white text-primary-600 font-semibold rounded-xl transition-all duration-200"
             aria-label="Consulter la page des tarifs"
           >
             Voir nos tarifs

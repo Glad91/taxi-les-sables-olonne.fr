@@ -58,7 +58,7 @@
               </a>
               <NuxtLink
                 to="/contact"
-                class="inline-flex items-center justify-center px-8 py-4 bg-white/20 hover:bg-white/30 border-2 border-white/40 text-white font-semibold rounded-xl transition-all duration-200 backdrop-blur-sm"
+                class="inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-gray-100 border-2 border-white text-primary-600 font-semibold rounded-xl transition-all duration-200"
                 aria-label="Aller à la page de contact pour réserver en ligne"
               >
                 Réserver en ligne
@@ -387,7 +387,7 @@
           Réservez votre Taxi aux Sables d'Olonne
         </h2>
         <p
-          class="text-lg sm:text-xl text-gray-100 mb-6 sm:mb-8 max-w-2xl mx-auto px-4 leading-relaxed"
+          class="text-lg sm:text-xl text-gray-200 mb-6 sm:mb-8 max-w-2xl mx-auto px-4 leading-relaxed"
         >
           <strong>Service 24h/24</strong>
           • Réservation immédiate au
@@ -408,7 +408,7 @@
           </a>
           <NuxtLink
             to="/contact"
-            class="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-white/20 hover:bg-white/30 border-2 border-white/40 text-white font-semibold rounded-xl transition-all duration-200 backdrop-blur-sm text-sm sm:text-base"
+            class="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-white hover:bg-gray-100 border-2 border-white text-primary-600 font-semibold rounded-xl transition-all duration-200 text-sm sm:text-base"
             aria-label="Aller à la page de contact pour réserver en ligne"
           >
             Réserver en ligne

@@ -141,7 +141,7 @@
         <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
           Besoin d'un devis personnalisé ?
         </h2>
-        <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
+        <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
           Contactez-nous pour obtenir un devis gratuit et sans engagement pour votre trajet.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -154,7 +154,7 @@
           </a>
           <NuxtLink
             to="/contact"
-            class="inline-flex items-center px-8 py-4 bg-white/20 hover:bg-white/30 border-2 border-white/40 text-white font-semibold rounded-xl transition-all duration-200"
+            class="inline-flex items-center px-8 py-4 bg-white hover:bg-gray-100 border-2 border-white text-primary-600 font-semibold rounded-xl transition-all duration-200"
           >
             Demander en ligne
           </NuxtLink>

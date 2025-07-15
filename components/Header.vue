@@ -88,7 +88,7 @@
           <button
             class="text-gray-800 hover:text-primary-600 transition-colors p-1"
             :aria-label="mobileMenuOpen ? 'Fermer le menu' : 'Ouvrir le menu'"
-            aria-expanded="mobileMenuOpen"
+            :aria-expanded="mobileMenuOpen"
             aria-controls="mobile-menu"
             @click="mobileMenuOpen = !mobileMenuOpen"
           >
