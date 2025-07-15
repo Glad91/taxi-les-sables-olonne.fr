@@ -65,6 +65,11 @@ export default defineNuxtConfig({
   },
   schemaOrg: {
     host: 'https://www.taxi-les-sables-olonne.fr',
+    defaults: {
+      // Désactiver les schemas par défaut pour éviter les doublons
+      WebSite: false,
+      Organization: false,
+    },
   },
   seo: {
     // Options globales pour le module SEO

@@ -9,7 +9,8 @@
       "Bash(find:*)",
       "Bash(npm install:*)",
       "WebFetch(domain:nuxtseo.com)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": []
   }

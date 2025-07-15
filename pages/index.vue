@@ -476,6 +476,8 @@ useSchemaOrg([
     url: 'https://www.taxi-les-sables-olonne.fr',
     telephone: '+33668314690',
     email: 'contact@taxi-les-sables-olonne.fr',
+    image: 'https://www.taxi-les-sables-olonne.fr/images/sables-olonne-remblai.jpg',
+    logo: 'https://www.taxi-les-sables-olonne.fr/favicon.svg',
     priceRange: '€€',
     currenciesAccepted: 'EUR',
     paymentAccepted: ['Cash', 'CreditCard'],
