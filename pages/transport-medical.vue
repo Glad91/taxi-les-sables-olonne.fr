@@ -138,50 +138,69 @@
 <script setup>
 import { PhoneIcon, HeartIcon, CheckIcon } from '@heroicons/vue/24/outline'
 
-// Schema.org Service pour la page transport médical
+// Schema.org LocalBusiness avec service médical pour la page transport médical
 useSchemaOrg([
   {
-    '@type': 'MedicalService',
-    'name': 'Transport Médical Conventionné CPAM',
-    'description':
-        'Service de taxi conventionné par la CPAM pour tous vos transports médicaux. Prise en charge directe selon prescription médicale.',
-    'url': 'https://www.taxi-les-sables-olonne.fr/transport-medical',
-    'provider': {
-      '@type': 'LocalBusiness',
-      'name': 'Taxi Les Sables d\'Olonne',
-      'telephone': '+33668314690',
-      'url': 'https://www.taxi-les-sables-olonne.fr',
+    '@type': 'LocalBusiness',
+    'name': 'Taxi Les Sables d\'Olonne',
+    'description': 'Service de taxi conventionné CPAM pour transport médical aux Sables d\'Olonne',
+    'telephone': '+33668314690',
+    'url': 'https://www.taxi-les-sables-olonne.fr',
+    'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': 'Place Napoléon III',
+      'addressLocality': 'Les Sables d\'Olonne',
+      'postalCode': '85100',
+      'addressRegion': 'Vendée',
+      'addressCountry': 'FR',
     },
-    'serviceType': 'Transport médical conventionné',
-    'medicalSpecialty': 'Transport sanitaire',
+    'priceRange': '€€',
+    'image': 'https://www.taxi-les-sables-olonne.fr/images/sables-olonne-port-real.jpg',
     'areaServed': [
-      'Les Sables d\'Olonne',
-      'Vendée',
-      'CHD Vendée La Roche-sur-Yon',
-      'Clinique Saint-Charles',
-    ],
-    'availableService': [
-      'Consultations médicales',
-      'Hospitalisations',
-      'Traitements en série',
-      'Radiothérapie',
-      'Chimiothérapie',
-      'Dialyse',
-      'Kinésithérapie',
-      'Transport CMPP',
-    ],
-    'paymentAccepted': ['CPAM', 'Tiers payant'],
-    'isAcceptingNewPatients': true,
-    'offers': {
-      '@type': 'Offer',
-      'name': 'Transport conventionné CPAM',
-      'description': 'Prise en charge selon prescription médicale et droits CPAM',
-      'priceCurrency': 'EUR',
-      'seller': {
-        '@type': 'LocalBusiness',
-        'name': 'Taxi Les Sables d\'Olonne',
+      {
+        '@type': 'City',
+        'name': 'Les Sables d\'Olonne',
+        'addressCountry': 'FR',
       },
+      {
+        '@type': 'State',
+        'name': 'Vendée',
+        'addressCountry': 'FR',
+      },
+    ],
+    'hasOfferCatalog': {
+      '@type': 'OfferCatalog',
+      'name': 'Transport Médical Conventionné',
+      'itemListElement': [
+        {
+          '@type': 'Offer',
+          'name': 'Transport conventionné CPAM',
+          'description': 'Prise en charge selon prescription médicale et droits CPAM',
+          'priceCurrency': 'EUR',
+          'validFrom': '2025-01-01',
+          'validThrough': '2025-12-31',
+          'itemOffered': {
+            '@type': 'MedicalService',
+            'name': 'Transport Médical Conventionné CPAM',
+            'description': 'Service conventionné pour consultations, hospitalisations, traitements',
+            'serviceType': 'Transport médical conventionné',
+            'medicalSpecialty': 'Transport sanitaire',
+            'availableService': [
+              'Consultations médicales',
+              'Hospitalisations',
+              'Traitements en série',
+              'Radiothérapie',
+              'Chimiothérapie',
+              'Dialyse',
+              'Kinésithérapie',
+              'Transport CMPP',
+            ],
+            'category': 'Transport médical',
+          },
+        },
+      ],
     },
+    'paymentAccepted': ['CPAM', 'Tiers payant'],
   },
 ])
 
