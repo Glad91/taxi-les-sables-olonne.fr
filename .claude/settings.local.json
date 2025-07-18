@@ -19,7 +19,13 @@
       "Bash(git push:*)",
       "Bash(pnpm i:*)",
       "Bash(rm:*)",
-      "Bash(pnpm lint:*)"
+      "Bash(pnpm lint:*)",
+      "WebFetch(domain:www.arretedebouder.com)",
+      "WebFetch(domain:unsplash.com)",
+      "WebFetch(domain:commons.wikimedia.org)",
+      "Bash(cp:*)",
+      "Bash(identify:*)",
+      "Bash(magick:*)"
     ],
     "deny": []
   }

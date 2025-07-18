@@ -523,6 +523,7 @@ const validateForm = () => {
 
 const submitForm = async () => {
   if (!validateForm()) {
+    console.log(formErrors)
     return
   }
 

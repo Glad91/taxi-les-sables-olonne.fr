@@ -541,5 +541,14 @@ useSeoMeta({
   title: 'Taxi Les Sables d\'Olonne - Service 24h/24 Vendée | 06 68 31 46 90',
   description:
       'Taxi Les Sables d\'Olonne ⭐ Service 24h/24 au 06 68 31 46 90. Transport médical conventionné CPAM, gare SNCF, aéroport Nantes. Tarifs réglementés Vendée. Place Napoléon III.',
+  ogTitle: 'Taxi Les Sables d\'Olonne - Service 24h/24 Vendée | 06 68 31 46 90',
+  ogDescription:
+    'Taxi Les Sables d\'Olonne ⭐ Service 24h/24 au 06 68 31 46 90. Transport médical conventionné CPAM, gare SNCF, aéroport Nantes. Tarifs réglementés Vendée. Place Napoléon III.',
+  ogImage: 'https://www.taxi-les-sables-olonne.fr/images/twitter_og.png',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Taxi Les Sables d\'Olonne - Service 24h/24 Vendée | 06 68 31 46 90',
+  twitterDescription:
+    'Taxi Les Sables d\'Olonne ⭐ Service 24h/24 au 06 68 31 46 90. Transport médical conventionné CPAM, gare SNCF, aéroport Nantes. Tarifs réglementés Vendée. Place Napoléon III.',
+  twitterImage: 'https://www.taxi-les-sables-olonne.fr/images/twitter_og.png',
 })
 </script>
