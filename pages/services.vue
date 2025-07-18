@@ -332,30 +332,24 @@ const handlePricingClick = () => {
   trackPricingView('services_page')
 }
 
-// Schema.org Service pour la page services
+// Schema.org LocalBusiness et Services pour la page services
 useSchemaOrg([
   {
-    '@type': 'Service',
-    'name': 'Services de Transport Taxi Les Sables d\'Olonne',
-    'description':
-        'Services complets de transport professionnel : local, médical conventionné CPAM, navettes aéroport et gare, longues distances.',
-    'url': 'https://www.taxi-les-sables-olonne.fr/services',
-    'provider': {
-      '@type': 'LocalBusiness',
-      'name': 'Taxi Les Sables d\'Olonne',
-      'telephone': '+33668314690',
-      'url': 'https://www.taxi-les-sables-olonne.fr',
-      'address': {
-        '@type': 'PostalAddress',
-        'streetAddress': 'Les Sables d\'Olonne',
-        'addressLocality': 'Les Sables d\'Olonne',
-        'postalCode': '85100',
-        'addressRegion': 'Vendée',
-        'addressCountry': 'FR',
-      },
-      'priceRange': '€€',
-      'image': 'https://www.taxi-les-sables-olonne.fr/images/sables-olonne-port-real.jpg',
+    '@type': 'LocalBusiness',
+    'name': 'Taxi Les Sables d\'Olonne',
+    'description': 'Service de taxi professionnel aux Sables d\'Olonne et en Vendée',
+    'telephone': '+33668314690',
+    'url': 'https://www.taxi-les-sables-olonne.fr',
+    'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': 'Les Sables d\'Olonne',
+      'addressLocality': 'Les Sables d\'Olonne',
+      'postalCode': '85100',
+      'addressRegion': 'Vendée',
+      'addressCountry': 'FR',
     },
+    'priceRange': '€€',
+    'image': 'https://www.taxi-les-sables-olonne.fr/images/sables-olonne-port-real.jpg',
     'areaServed': [
       {
         '@type': 'City',
@@ -368,44 +362,47 @@ useSchemaOrg([
         'addressCountry': 'FR',
       },
     ],
-    'serviceType': [
-      'Transport médical conventionné',
-      'Navette aéroport',
-      'Navette gare SNCF',
-      'Transport local',
-      'Longues distances',
-    ],
-    'offers': [
-      {
-        '@type': 'Offer',
-        'name': 'Transport Médical Conventionné',
-        'description': 'Service agréé CPAM avec prise en charge directe',
-        'category': 'Transport médical',
-      },
-      {
-        '@type': 'Offer',
-        'name': 'Navette Aéroport Nantes',
-        'description': 'Transfert vers aéroport de Nantes Atlantique',
-        'category': 'Navette aéroport',
-      },
-      {
-        '@type': 'Offer',
-        'name': 'Navette Gare SNCF',
-        'description': 'Transfert vers gares SNCF et TGV',
-        'category': 'Navette gare',
-      },
-      {
-        '@type': 'Offer',
-        'name': 'Transport Local',
-        'description': 'Courses locales aux Sables d\'Olonne et communes',
-        'category': 'Transport local',
-      },
-    ],
-    'availableChannel': {
-      '@type': 'ServiceChannel',
-      'name': 'Réservation téléphonique',
-      'servicePhone': '+33668314690',
-      'availableLanguage': 'French',
+    'hasOfferCatalog': {
+      '@type': 'OfferCatalog',
+      'name': 'Services de Transport',
+      'itemListElement': [
+        {
+          '@type': 'Offer',
+          'itemOffered': {
+            '@type': 'Service',
+            'name': 'Transport Médical Conventionné',
+            'description': 'Service agréé CPAM avec prise en charge directe',
+            'category': 'Transport médical',
+          },
+        },
+        {
+          '@type': 'Offer',
+          'itemOffered': {
+            '@type': 'Service',
+            'name': 'Navette Aéroport Nantes',
+            'description': 'Transfert vers aéroport de Nantes Atlantique',
+            'category': 'Navette aéroport',
+          },
+        },
+        {
+          '@type': 'Offer',
+          'itemOffered': {
+            '@type': 'Service',
+            'name': 'Navette Gare SNCF',
+            'description': 'Transfert vers gares SNCF et TGV',
+            'category': 'Navette gare',
+          },
+        },
+        {
+          '@type': 'Offer',
+          'itemOffered': {
+            '@type': 'Service',
+            'name': 'Transport Local',
+            'description': 'Courses locales aux Sables d\'Olonne et communes',
+            'category': 'Transport local',
+          },
+        },
+      ],
     },
   },
 ])
