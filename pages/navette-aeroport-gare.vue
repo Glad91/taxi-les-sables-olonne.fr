@@ -319,12 +319,13 @@
 <script setup>
 import { PhoneIcon, TruckIcon, CheckIcon } from '@heroicons/vue/24/outline'
 
-// Schema.org LocalBusiness, Service et FAQ pour la page navette aéroport gare
+// Schema.org LocalBusiness avec Service intégré pour la page navette aéroport gare
 useSchemaOrg([
   {
     '@type': 'LocalBusiness',
     '@id': 'https://www.taxi-les-sables-olonne.fr/#localbusiness',
     'name': 'Taxi Les Sables d\'Olonne',
+    'description': 'Service navette taxi premium vers aéroport Nantes Atlantique et gares SNCF. Transport TGV La Roche-sur-Yon, gare Nantes, suivi temps réel, tarifs fixes.',
     'telephone': '+33668314690',
     'url': 'https://www.taxi-les-sables-olonne.fr',
     'address': {
@@ -335,16 +336,20 @@ useSchemaOrg([
       'addressRegion': 'Vendée',
       'addressCountry': 'FR',
     },
-  },
-  {
-    '@type': 'Service',
-    'name': 'Navette Taxi Gare & Aéroport Nantes - Les Sables d\'Olonne',
-    'description':
-        'Service navette taxi premium vers aéroport Nantes Atlantique et gares SNCF. Transport TGV La Roche-sur-Yon, gare Nantes, suivi temps réel, tarifs fixes.',
-    'url': 'https://www.taxi-les-sables-olonne.fr/navette-aeroport-gare',
-    'provider': {
-      '@id': 'https://www.taxi-les-sables-olonne.fr/#localbusiness'
-    },
+    'priceRange': '€€',
+    'image': 'https://www.taxi-les-sables-olonne.fr/images/gare-sables-olonne-batiment.webp',
+    'areaServed': [
+      {
+        '@type': 'City',
+        'name': 'Les Sables d\'Olonne',
+        'addressCountry': 'FR',
+      },
+      {
+        '@type': 'State',
+        'name': 'Vendée',
+        'addressCountry': 'FR',
+      },
+    ],
     'serviceType': [
       'Navette aéroport Nantes',
       'Transport gare SNCF',
@@ -352,33 +357,7 @@ useSchemaOrg([
       'Transfert ferroviaire',
       'Shuttle airport',
     ],
-    'areaServed': [
-      'Les Sables d\'Olonne',
-      'Aéroport Nantes Atlantique',
-      'Gare SNCF Les Sables d\'Olonne',
-      'Gare TGV La Roche-sur-Yon',
-      'Gare SNCF Nantes',
-      'Pays de la Loire',
-      'Vendée',
-      'Loire-Atlantique',
-    ],
-    'availableService': [
-      'Transfert aéroport Nantes Atlantique',
-      'Transport gare TGV La Roche-sur-Yon',
-      'Navette gare SNCF Nantes',
-      'Suivi vol temps réel',
-      'Surveillance horaires train',
-      'Accueil personnalisé terminal',
-      'Aide bagages aéroport',
-      'Navettes partagées',
-      'Réservation 24h/24',
-    ],
-    'serviceOutput': {
-      '@type': 'Service',
-      'name': 'Transport sécurisé ponctuel gares aéroports',
-      'description': 'Arrivée garantie à l\'heure pour vols internationaux et trains TGV/TER',
-    },
-    'offers': [
+    'makesOffer': [
       {
         '@type': 'Offer',
         'name': 'Navette Aéroport Nantes Atlantique',
@@ -386,8 +365,10 @@ useSchemaOrg([
         'price': '230',
         'priceCurrency': 'EUR',
         'priceValidUntil': '2024-12-31',
-        'seller': {
-          '@id': 'https://www.taxi-les-sables-olonne.fr/#localbusiness'
+        'itemOffered': {
+          '@type': 'Service',
+          'name': 'Navette Aéroport Nantes Atlantique',
+          'serviceType': 'Transport aéroport',
         },
       },
       {
@@ -397,8 +378,10 @@ useSchemaOrg([
         'price': '83',
         'priceCurrency': 'EUR',
         'priceValidUntil': '2024-12-31',
-        'seller': {
-          '@id': 'https://www.taxi-les-sables-olonne.fr/#localbusiness'
+        'itemOffered': {
+          '@type': 'Service',
+          'name': 'Navette Gare TGV La Roche-sur-Yon',
+          'serviceType': 'Transport gare TGV',
         },
       },
       {
@@ -408,8 +391,10 @@ useSchemaOrg([
         'price': '15',
         'priceCurrency': 'EUR',
         'priceValidUntil': '2024-12-31',
-        'seller': {
-          '@id': 'https://www.taxi-les-sables-olonne.fr/#localbusiness'
+        'itemOffered': {
+          '@type': 'Service',
+          'name': 'Navette Gare SNCF Les Sables',
+          'serviceType': 'Transport gare locale',
         },
       },
     ],
@@ -458,5 +443,19 @@ useSeoMeta({
   description:
       'Transport navette taxi vers aéroport Nantes Atlantique, gare TGV La Roche-sur-Yon et gares SNCF. Suivi temps réel, tarifs fixes. Réservation 06 68 31 46 90.',
   keywords: 'navette aéroport Nantes, taxi gare SNCF, transport TGV La Roche-sur-Yon, navette Sables Olonne, transfert aéroport, shuttle Nantes Atlantique',
+  
+  // Open Graph
+  ogTitle: 'Navette Taxi Aéroport Nantes & Gares SNCF - Les Sables d\'Olonne',
+  ogDescription: 'Transport navette taxi vers aéroport Nantes Atlantique, gare TGV La Roche-sur-Yon et gares SNCF. Suivi temps réel, tarifs fixes. Réservation 06 68 31 46 90.',
+  ogImage: 'https://www.taxi-les-sables-olonne.fr/images/gare-sables-olonne-batiment.webp',
+  ogUrl: 'https://www.taxi-les-sables-olonne.fr/navette-aeroport-gare',
+  ogType: 'website',
+  ogSiteName: 'Taxi Les Sables d\'Olonne',
+  
+  // Twitter Card
+  twitterTitle: 'Navette Taxi Aéroport Nantes & Gares SNCF - Les Sables d\'Olonne',
+  twitterDescription: 'Transport navette taxi vers aéroport Nantes Atlantique, gare TGV La Roche-sur-Yon et gares SNCF. Suivi temps réel, tarifs fixes.',
+  twitterImage: 'https://www.taxi-les-sables-olonne.fr/images/gare-sables-olonne-batiment.webp',
+  twitterCard: 'summary_large_image',
 })
 </script>
