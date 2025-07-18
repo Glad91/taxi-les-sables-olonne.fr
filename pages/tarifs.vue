@@ -182,8 +182,8 @@ const pricingCategories = [
     description: 'Conformes à l\'arrêté préfectoral de la Vendée.',
     prices: [
       { label: 'Prise en charge', price: '2,90 €' },
-      { label: 'Tarif A (jour, semaine)', price: '2,16 € / km' },
-      { label: 'Tarif B (nuit, dimanche)', price: '3,24 € / km' },
+      { label: 'Tarif de Jour', price: '2,16 € / km' },
+      { label: 'Tarif de Nuit', price: '3,24 € / km' },
       { label: 'Heure d\'attente', price: '29,44 €' },
     ],
   },
@@ -232,7 +232,7 @@ useSchemaOrg([
         '@type': 'Service',
         'name': 'Transport local réglementé',
         'description':
-            'Tarifs officiels Vendée : prise en charge 2,90€, tarif A 2,16€/km, tarif B 3,24€/km',
+            'Tarifs officiels Vendée : prise en charge 2,90€, tarif jour 2,16€/km, tarif nuit 3,24€/km',
       },
       {
         '@type': 'Service',
