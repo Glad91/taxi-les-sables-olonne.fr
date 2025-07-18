@@ -111,6 +111,7 @@
             <ul class="list-disc list-inside text-gray-700 space-y-1">
               <li>Votre carte Vitale à jour</li>
               <li>Votre attestation de droits (moins d'un an)</li>
+              <li>Votre attestation de mutuelle</li>
               <li>
                 La prescription médicale de transport (bon de transport) signée par votre médecin
               </li>
@@ -125,6 +126,10 @@
             <li>• Clinique Saint-Charles - La Roche-sur-Yon</li>
             <li>• Centre Hospitalier de Challans</li>
             <li>• Hôpital des Sables d'Olonne</li>
+            <li>• <strong>CHU de Nantes</strong></li>
+            <li>• <strong>Institut de Cancérologie de l'Ouest - Nantes</strong></li>
+            <li>• <strong>Clinique Brétéché - Nantes</strong></li>
+            <li>• <strong>Clinique Sourdille - Nantes</strong></li>
             <li>• Centres de rééducation de la région</li>
           </ul>
         </div>
@@ -166,7 +171,7 @@
                 Quels documents faut-il présenter ?
               </h3>
               <p class="text-gray-700 leading-relaxed">
-                Vous devez présenter votre carte Vitale à jour, votre attestation de droits (moins d'un an) et la prescription médicale de transport signée par votre médecin. Ces documents garantissent la prise en charge par la CPAM.
+                Vous devez présenter votre carte Vitale à jour, votre attestation de droits (moins d'un an), votre attestation de mutuelle, et la prescription médicale de transport signée par votre médecin. Ces documents garantissent la prise en charge par la CPAM et votre mutuelle.
               </p>
             </article>
 
@@ -193,7 +198,7 @@
                 Vers quels établissements de santé nous nous rendons ?
               </h3>
               <p class="text-gray-700 leading-relaxed">
-                Nous desservons tous les établissements de santé de Vendée : CHD Vendée La Roche-sur-Yon, Clinique Saint-Charles, Centre Hospitalier de Challans, et Hôpital des Sables d'Olonne. Nous assurons également les trajets vers les centres de rééducation.
+                Nous desservons tous les établissements de santé de Vendée et de Loire-Atlantique : CHD Vendée La Roche-sur-Yon, Clinique Saint-Charles, Centre Hospitalier de Challans, Hôpital des Sables d'Olonne, et les principaux hôpitaux de Nantes (CHU de Nantes, Institut de Cancérologie de l'Ouest, Clinique Brétéché, Clinique Sourdille). Nous assurons également les trajets vers les centres de rééducation.
               </p>
             </article>
           </div>
@@ -298,7 +303,7 @@ useSchemaOrg([
         'name': 'Quels documents faut-il présenter ?',
         'acceptedAnswer': {
           '@type': 'Answer',
-          'text': 'Vous devez présenter votre carte Vitale à jour, votre attestation de droits (moins d\'un an) et la prescription médicale de transport signée par votre médecin. Ces documents garantissent la prise en charge par la CPAM.',
+          'text': 'Vous devez présenter votre carte Vitale à jour, votre attestation de droits (moins d\'un an), votre attestation de mutuelle, et la prescription médicale de transport signée par votre médecin. Ces documents garantissent la prise en charge par la CPAM et votre mutuelle.',
         },
       },
       {
@@ -322,7 +327,7 @@ useSchemaOrg([
         'name': 'Vers quels établissements de santé nous nous rendons ?',
         'acceptedAnswer': {
           '@type': 'Answer',
-          'text': 'Nous desservons tous les établissements de santé de Vendée : CHD Vendée La Roche-sur-Yon, Clinique Saint-Charles, Centre Hospitalier de Challans, et Hôpital des Sables d\'Olonne. Nous assurons également les trajets vers les centres de rééducation.',
+          'text': 'Nous desservons tous les établissements de santé de Vendée et de Loire-Atlantique : CHD Vendée La Roche-sur-Yon, Clinique Saint-Charles, Centre Hospitalier de Challans, Hôpital des Sables d\'Olonne, et les principaux hôpitaux de Nantes (CHU de Nantes, Institut de Cancérologie de l\'Ouest, Clinique Brétéché, Clinique Sourdille). Nous assurons également les trajets vers les centres de rééducation.',
         },
       },
     ],
