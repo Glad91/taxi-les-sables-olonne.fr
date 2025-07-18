@@ -588,8 +588,11 @@ useSchemaOrg([
         'streetAddress': 'Place Napoléon III',
         'addressLocality': 'Les Sables d\'Olonne',
         'postalCode': '85100',
+        'addressRegion': 'Vendée',
         'addressCountry': 'FR',
       },
+      'priceRange': '€€',
+      'image': 'https://www.taxi-les-sables-olonne.fr/images/sables-olonne-port-real.jpg',
       'openingHours': 'Mo-Su 00:00-23:59',
       'contactPoint': [
         {
