@@ -39,12 +39,12 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <!-- Colonne de gauche : Image -->
         <div
-          class="relative h-96 lg:h-auto lg:aspect-w-1 lg:aspect-h-1 rounded-2xl overflow-hidden shadow-2xl"
+          class="relative h-80 lg:h-auto lg:aspect-[3/2] rounded-2xl overflow-hidden shadow-2xl"
         >
           <NuxtImg
             src="/images/gare-sables-olonne-batiment.webp"
             alt="Bâtiment voyageurs de la gare SNCF des Sables d'Olonne"
-            class="w-full h-full object-contain"
+            class="w-full h-full object-cover"
             width="1200"
             height="800"
             placeholder
