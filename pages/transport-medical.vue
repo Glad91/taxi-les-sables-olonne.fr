@@ -39,21 +39,19 @@
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
         <!-- Colonne de gauche : Description -->
         <div class="lg:col-span-2 bg-white rounded-2xl shadow-lg p-8">
-          <h2 class="text-2xl font-bold text-gray-900 mb-6">
-            Un service de transport médical adapté et humain
-          </h2>
-          <p class="text-gray-700 mb-4">
-            Nous sommes un service de
-            <strong>taxi conventionné par la CPAM</strong>
-            et toutes les caisses d'assurance maladie. Nous assurons vos transports pour des
-            consultations, hospitalisations (entrées/sorties), séances de rééducation, et tout autre
-            rendez-vous médical.
-          </p>
-          <p class="text-gray-700 mb-6">
-            Notre mission est de vous offrir un transport confortable, ponctuel et serein. Nous vous
-            accompagnons de votre domicile jusqu'au lieu de votre rendez-vous, en vous aidant dans
-            vos démarches administratives si nécessaire.
-          </p>
+          <header>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">
+              Service de transport médical conventionné CPAM
+            </h2>
+          </header>
+          <div class="prose prose-lg max-w-none">
+            <p class="text-gray-700 mb-4">
+              <strong>Taxi Les Sables d'Olonne est conventionné par la CPAM</strong> et toutes les caisses d'assurance maladie. Nous assurons vos transports médicaux pour consultations, hospitalisations, séances de rééducation et rendez-vous médicaux.
+            </p>
+            <p class="text-gray-700 mb-6">
+              <strong>Service 24h/24 et 7j/7</strong> : transport confortable, ponctuel et serein. Nous vous accompagnons de votre domicile jusqu'au lieu de votre rendez-vous avec aide administrative si nécessaire.
+            </p>
+          </div>
 
           <h3 class="text-xl font-bold text-gray-900 mb-4">
             Types de transports pris en charge
@@ -131,6 +129,76 @@
           </ul>
         </div>
       </div>
+
+      <!-- Section FAQ optimisée pour l'IA -->
+      <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <header class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Questions fréquentes sur le transport médical
+            </h2>
+            <p class="text-lg text-gray-600">
+              Réponses claires et directes pour vos déplacements médicaux
+            </p>
+          </header>
+
+          <div class="space-y-8">
+            <article class="bg-gray-50 rounded-xl p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Qu'est-ce que le transport médical conventionné ?
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                Le transport médical conventionné est un service de taxi agréé par la CPAM. Il permet aux patients de se rendre à leurs rendez-vous médicaux sans avancer de frais, sur prescription médicale.
+              </p>
+            </article>
+
+            <article class="bg-gray-50 rounded-xl p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Qui peut bénéficier du transport médical conventionné ?
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                Toute personne avec une prescription médicale de transport peut bénéficier du service. Les patients en ALD (Affection Longue Durée), les femmes enceintes, et les personnes à mobilité réduite sont prioritaires.
+              </p>
+            </article>
+
+            <article class="bg-gray-50 rounded-xl p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Quels documents faut-il présenter ?
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                Vous devez présenter votre carte Vitale à jour, votre attestation de droits (moins d'un an) et la prescription médicale de transport signée par votre médecin. Ces documents garantissent la prise en charge par la CPAM.
+              </p>
+            </article>
+
+            <article class="bg-gray-50 rounded-xl p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Combien coûte le transport médical conventionné ?
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                Le transport médical conventionné est pris en charge par la CPAM selon vos droits. Avec le tiers payant, vous n'avancez aucun frais. Le tarif est réglementé et transparent.
+              </p>
+            </article>
+
+            <article class="bg-gray-50 rounded-xl p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Comment réserver un transport médical ?
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                Appelez le 06 68 31 46 90 pour réserver votre transport médical. Notre service est disponible 24h/24 et 7j/7. Nous vous conseillons de réserver à l'avance pour garantir votre prise en charge.
+              </p>
+            </article>
+
+            <article class="bg-gray-50 rounded-xl p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Vers quels établissements de santé nous nous rendons ?
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                Nous desservons tous les établissements de santé de Vendée : CHD Vendée La Roche-sur-Yon, Clinique Saint-Charles, Centre Hospitalier de Challans, et Hôpital des Sables d'Olonne. Nous assurons également les trajets vers les centres de rééducation.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </template>
@@ -205,8 +273,8 @@ useSchemaOrg([
 ])
 
 useSeoMeta({
-  title: 'Transport Médical Conventionné Taxi Les Sables d\'Olonne',
+  title: 'Transport Médical Conventionné Taxi Les Sables d\'Olonne - CPAM',
   description:
-      'Service de taxi conventionné CPAM aux Sables d\'Olonne pour vos transports médicaux. Ponctualité, confort et aide administrative. Contactez-nous au 06 68 31 46 90.',
+      'Transport médical conventionné CPAM aux Sables d\'Olonne. Service agréé pour consultations, hospitalisations, dialyse, chimiothérapie. Tiers payant, aucun frais à avancer. Réservation 24h/24 au 06 68 31 46 90.',
 })
 </script>
