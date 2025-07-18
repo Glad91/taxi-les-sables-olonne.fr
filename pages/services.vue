@@ -353,6 +353,8 @@ useSchemaOrg([
         'addressRegion': 'Vendée',
         'addressCountry': 'FR',
       },
+      'priceRange': '€€',
+      'image': 'https://www.taxi-les-sables-olonne.fr/images/sables-olonne-port-real.jpg',
     },
     'areaServed': [
       {
