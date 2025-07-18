@@ -345,6 +345,14 @@ useSchemaOrg([
       'name': 'Taxi Les Sables d\'Olonne',
       'telephone': '+33668314690',
       'url': 'https://www.taxi-les-sables-olonne.fr',
+      'address': {
+        '@type': 'PostalAddress',
+        'streetAddress': 'Les Sables d\'Olonne',
+        'addressLocality': 'Les Sables d\'Olonne',
+        'postalCode': '85100',
+        'addressRegion': 'Vendée',
+        'addressCountry': 'FR',
+      },
     },
     'areaServed': [
       {
