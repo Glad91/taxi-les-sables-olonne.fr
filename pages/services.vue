@@ -327,7 +327,7 @@ useSchemaOrg([
     'url': 'https://www.taxi-les-sables-olonne.fr',
     'address': {
       '@type': 'PostalAddress',
-      'streetAddress': '3 place Napoléon III',
+      'streetAddress': 'Place Napoléon III',
       'addressLocality': 'Les Sables d\'Olonne',
       'postalCode': '85100',
       'addressRegion': 'Vendée',
