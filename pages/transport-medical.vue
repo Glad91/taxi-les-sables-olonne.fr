@@ -270,6 +270,63 @@ useSchemaOrg([
     },
     'paymentAccepted': ['CPAM', 'Tiers payant'],
   },
+  // Schema.org FAQ pour les questions fréquentes
+  {
+    '@type': 'FAQPage',
+    'name': 'Questions fréquentes sur le transport médical conventionné',
+    'description': 'Réponses aux questions les plus fréquentes sur notre service de transport médical conventionné CPAM',
+    'url': 'https://www.taxi-les-sables-olonne.fr/transport-medical',
+    'mainEntity': [
+      {
+        '@type': 'Question',
+        'name': 'Qu\'est-ce que le transport médical conventionné ?',
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': 'Le transport médical conventionné est un service de taxi agréé par la CPAM. Il permet aux patients de se rendre à leurs rendez-vous médicaux sans avancer de frais, sur prescription médicale.',
+        },
+      },
+      {
+        '@type': 'Question',
+        'name': 'Qui peut bénéficier du transport médical conventionné ?',
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': 'Toute personne avec une prescription médicale de transport peut bénéficier du service. Les patients en ALD (Affection Longue Durée), les femmes enceintes, et les personnes à mobilité réduite sont prioritaires.',
+        },
+      },
+      {
+        '@type': 'Question',
+        'name': 'Quels documents faut-il présenter ?',
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': 'Vous devez présenter votre carte Vitale à jour, votre attestation de droits (moins d\'un an) et la prescription médicale de transport signée par votre médecin. Ces documents garantissent la prise en charge par la CPAM.',
+        },
+      },
+      {
+        '@type': 'Question',
+        'name': 'Combien coûte le transport médical conventionné ?',
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': 'Le transport médical conventionné est pris en charge par la CPAM selon vos droits. Avec le tiers payant, vous n\'avancez aucun frais. Le tarif est réglementé et transparent.',
+        },
+      },
+      {
+        '@type': 'Question',
+        'name': 'Comment réserver un transport médical ?',
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': 'Appelez le 06 68 31 46 90 pour réserver votre transport médical. Notre service est disponible 24h/24 et 7j/7. Nous vous conseillons de réserver à l\'avance pour garantir votre prise en charge.',
+        },
+      },
+      {
+        '@type': 'Question',
+        'name': 'Vers quels établissements de santé nous nous rendons ?',
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': 'Nous desservons tous les établissements de santé de Vendée : CHD Vendée La Roche-sur-Yon, Clinique Saint-Charles, Centre Hospitalier de Challans, et Hôpital des Sables d\'Olonne. Nous assurons également les trajets vers les centres de rééducation.',
+        },
+      },
+    ],
+  },
 ])
 
 useSeoMeta({
