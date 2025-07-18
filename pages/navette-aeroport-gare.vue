@@ -44,7 +44,7 @@
           <NuxtImg
             src="/images/gare-sables-olonne-batiment.webp"
             alt="Bâtiment voyageurs de la gare SNCF des Sables d'Olonne"
-            class="w-full h-full object-cover"
+            class="w-full h-full object-contain"
             width="1200"
             height="800"
             placeholder
