@@ -319,8 +319,23 @@
 <script setup>
 import { PhoneIcon, TruckIcon, CheckIcon } from '@heroicons/vue/24/outline'
 
-// Schema.org Service et FAQ pour la page navette aéroport gare
+// Schema.org LocalBusiness, Service et FAQ pour la page navette aéroport gare
 useSchemaOrg([
+  {
+    '@type': 'LocalBusiness',
+    '@id': 'https://www.taxi-les-sables-olonne.fr/#localbusiness',
+    'name': 'Taxi Les Sables d\'Olonne',
+    'telephone': '+33668314690',
+    'url': 'https://www.taxi-les-sables-olonne.fr',
+    'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': 'Place Napoléon III',
+      'addressLocality': 'Les Sables d\'Olonne',
+      'postalCode': '85100',
+      'addressRegion': 'Vendée',
+      'addressCountry': 'FR',
+    },
+  },
   {
     '@type': 'Service',
     'name': 'Navette Taxi Gare & Aéroport Nantes - Les Sables d\'Olonne',
@@ -328,18 +343,7 @@ useSchemaOrg([
         'Service navette taxi premium vers aéroport Nantes Atlantique et gares SNCF. Transport TGV La Roche-sur-Yon, gare Nantes, suivi temps réel, tarifs fixes.',
     'url': 'https://www.taxi-les-sables-olonne.fr/navette-aeroport-gare',
     'provider': {
-      '@type': 'LocalBusiness',
-      'name': 'Taxi Les Sables d\'Olonne',
-      'telephone': '+33668314690',
-      'url': 'https://www.taxi-les-sables-olonne.fr',
-      'address': {
-        '@type': 'PostalAddress',
-        'streetAddress': 'Place Napoléon III',
-        'addressLocality': 'Les Sables d\'Olonne',
-        'postalCode': '85100',
-        'addressRegion': 'Vendée',
-        'addressCountry': 'FR',
-      },
+      '@id': 'https://www.taxi-les-sables-olonne.fr/#localbusiness'
     },
     'serviceType': [
       'Navette aéroport Nantes',
@@ -383,16 +387,7 @@ useSchemaOrg([
         'priceCurrency': 'EUR',
         'priceValidUntil': '2024-12-31',
         'seller': {
-          '@type': 'LocalBusiness',
-          'name': 'Taxi Les Sables d\'Olonne',
-          'address': {
-            '@type': 'PostalAddress',
-            'streetAddress': 'Place Napoléon III',
-            'addressLocality': 'Les Sables d\'Olonne',
-            'postalCode': '85100',
-            'addressRegion': 'Vendée',
-            'addressCountry': 'FR',
-          },
+          '@id': 'https://www.taxi-les-sables-olonne.fr/#localbusiness'
         },
       },
       {
@@ -403,16 +398,7 @@ useSchemaOrg([
         'priceCurrency': 'EUR',
         'priceValidUntil': '2024-12-31',
         'seller': {
-          '@type': 'LocalBusiness',
-          'name': 'Taxi Les Sables d\'Olonne',
-          'address': {
-            '@type': 'PostalAddress',
-            'streetAddress': 'Place Napoléon III',
-            'addressLocality': 'Les Sables d\'Olonne',
-            'postalCode': '85100',
-            'addressRegion': 'Vendée',
-            'addressCountry': 'FR',
-          },
+          '@id': 'https://www.taxi-les-sables-olonne.fr/#localbusiness'
         },
       },
       {
@@ -423,16 +409,7 @@ useSchemaOrg([
         'priceCurrency': 'EUR',
         'priceValidUntil': '2024-12-31',
         'seller': {
-          '@type': 'LocalBusiness',
-          'name': 'Taxi Les Sables d\'Olonne',
-          'address': {
-            '@type': 'PostalAddress',
-            'streetAddress': 'Place Napoléon III',
-            'addressLocality': 'Les Sables d\'Olonne',
-            'postalCode': '85100',
-            'addressRegion': 'Vendée',
-            'addressCountry': 'FR',
-          },
+          '@id': 'https://www.taxi-les-sables-olonne.fr/#localbusiness'
         },
       },
     ],
