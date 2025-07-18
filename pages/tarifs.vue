@@ -226,6 +226,16 @@ useSchemaOrg([
       'name': 'Taxi Les Sables d\'Olonne',
       'telephone': '+33668314690',
       'url': 'https://www.taxi-les-sables-olonne.fr',
+      'address': {
+        '@type': 'PostalAddress',
+        'streetAddress': 'Place Napoléon III',
+        'addressLocality': 'Les Sables d\'Olonne',
+        'postalCode': '85100',
+        'addressRegion': 'Vendée',
+        'addressCountry': 'FR',
+      },
+      'priceRange': '€€',
+      'image': 'https://www.taxi-les-sables-olonne.fr/images/sables-olonne-port-real.jpg',
     },
     'itemOffered': [
       {
