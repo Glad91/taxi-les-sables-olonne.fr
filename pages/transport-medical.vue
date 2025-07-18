@@ -22,7 +22,6 @@
               href="tel:0668314690"
               class="inline-flex items-center px-8 py-4 bg-taxi-yellow hover:bg-taxi-yellow-hover text-gray-900 font-bold rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg"
               aria-label="Appeler pour un transport médical au 06 68 31 46 90"
-              @click="trackCall('medical_transport_page')"
             >
               <PhoneIcon
                 class="h-5 w-5 mr-2"
@@ -138,14 +137,6 @@
 
 <script setup>
 import { PhoneIcon, HeartIcon, CheckIcon } from '@heroicons/vue/24/outline'
-
-// GTM tracking
-const { trackCall, trackPageView } = useGTM()
-
-// Tracker la page vue
-onMounted(() => {
-  trackPageView('medical_transport')
-})
 
 // Schema.org Service pour la page transport médical
 useSchemaOrg([

@@ -189,7 +189,6 @@
             href="tel:0668314690"
             class="inline-flex items-center px-8 py-4 bg-taxi-yellow hover:bg-taxi-yellow-hover text-gray-900 font-bold rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg"
             aria-label="Appeler le taxi au 06 68 31 46 90"
-            @click="trackCall('services_page')"
           >
             <PhoneIcon
               class="h-5 w-5 mr-2"
@@ -212,7 +211,6 @@
             to="/tarifs"
             class="inline-flex items-center px-8 py-4 bg-white hover:bg-gray-100 border-2 border-white text-primary-600 font-semibold rounded-xl transition-all duration-200"
             aria-label="Consulter la page des tarifs"
-            @click="handlePricingClick"
           >
             Voir nos tarifs
             <CurrencyEuroIcon
@@ -319,19 +317,6 @@ const advantages = [
   },
 ]
 
-// GTM tracking
-const { trackCall, trackPageView, trackPricingView } = useGTM()
-
-// Tracker la page vue
-onMounted(() => {
-  trackPageView('services')
-})
-
-// Tracker les clics vers les tarifs
-const handlePricingClick = () => {
-  trackPricingView('services_page')
-}
-
 // Schema.org LocalBusiness et Services pour la page services
 useSchemaOrg([
   {
@@ -342,7 +327,7 @@ useSchemaOrg([
     'url': 'https://www.taxi-les-sables-olonne.fr',
     'address': {
       '@type': 'PostalAddress',
-      'streetAddress': 'Les Sables d\'Olonne',
+      'streetAddress': '3 place Napoléon III',
       'addressLocality': 'Les Sables d\'Olonne',
       'postalCode': '85100',
       'addressRegion': 'Vendée',

@@ -148,7 +148,6 @@
           <a
             href="tel:0668314690"
             class="inline-flex items-center px-8 py-4 bg-taxi-yellow hover:bg-taxi-yellow-hover text-gray-900 font-bold rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg"
-            @click="trackCall('pricing_page')"
           >
             <PhoneIcon class="h-5 w-5 mr-2" />
             Appeler pour un devis
@@ -175,14 +174,6 @@ import {
   InformationCircleIcon,
 } from '@heroicons/vue/24/outline'
 import { defineOffer } from 'nuxt-schema-org/schema'
-
-// GTM tracking
-const { trackCall, trackPageView } = useGTM()
-
-// Tracker la page vue
-onMounted(() => {
-  trackPageView('pricing')
-})
 
 const pricingCategories = [
   {

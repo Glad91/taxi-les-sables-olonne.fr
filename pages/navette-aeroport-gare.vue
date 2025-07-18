@@ -22,7 +22,6 @@
               href="tel:0668314690"
               class="inline-flex items-center px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-bold rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg"
               aria-label="Réserver une navette au 06 68 31 46 90"
-              @click="trackCall('airport_shuttle_page')"
             >
               <PhoneIcon
                 class="h-5 w-5 mr-2"
@@ -107,14 +106,6 @@
 
 <script setup>
 import { PhoneIcon, TruckIcon, CheckIcon } from '@heroicons/vue/24/outline'
-
-// GTM tracking
-const { trackCall, trackPageView } = useGTM()
-
-// Tracker la page vue
-onMounted(() => {
-  trackPageView('airport_shuttle')
-})
 
 // Schema.org Service pour la page navette aéroport gare
 useSchemaOrg([

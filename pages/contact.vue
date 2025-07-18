@@ -440,7 +440,6 @@
             href="tel:0668314690"
             class="inline-flex items-center px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-bold rounded-xl transition-colors duration-200 transform hover:scale-105 shadow-lg"
             aria-label="Appeler le taxi au 06 68 31 46 90"
-            @click="trackCall('contact_page')"
           >
             <PhoneIcon
               class="h-5 w-5 mr-2"
@@ -491,13 +490,6 @@ const isSubmitting = ref(false)
 const showSuccess = ref(false)
 const showError = ref(false)
 
-// GTM tracking
-const { trackFormSubmission, trackCall, trackPageView, trackQuoteRequest } = useGTM()
-
-// Tracker la page vue
-onMounted(() => {
-  trackPageView('contact')
-})
 const formErrors = ref({})
 
 // Validation du formulaire
@@ -547,14 +539,6 @@ const submitForm = async () => {
 
     showSuccess.value = true
 
-    // Tracker le succès du formulaire
-    trackFormSubmission('contact_form', true)
-
-    // Tracker la demande de devis selon le service
-    if (form.value.service) {
-      trackQuoteRequest(form.value.service, 'form')
-    }
-
     // Reset du formulaire après succès
     setTimeout(() => {
       form.value = {
@@ -577,8 +561,6 @@ const submitForm = async () => {
     console.error('Erreur lors de l\'envoi:', error)
     showError.value = true
 
-    // Tracker l'échec du formulaire
-    trackFormSubmission('contact_form', false)
     setTimeout(() => {
       showError.value = false
     }, 5000)
@@ -603,7 +585,7 @@ useSchemaOrg([
       'email': 'contact@taxi-les-sables-olonne.fr',
       'address': {
         '@type': 'PostalAddress',
-        'streetAddress': 'Place Napoléon III',
+        'streetAddress': '3 place Napoléon III',
         'addressLocality': 'Les Sables d\'Olonne',
         'postalCode': '85100',
         'addressCountry': 'FR',

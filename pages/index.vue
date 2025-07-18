@@ -49,7 +49,6 @@
                 href="tel:0668314690"
                 class="inline-flex items-center justify-center px-8 py-4 bg-taxi-yellow hover:bg-taxi-yellow-hover text-gray-900 font-bold rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
                 aria-label="Appeler maintenant le taxi au 06 68 31 46 90"
-                @click="trackCall('hero_section')"
               >
                 <PhoneIcon
                   class="h-5 w-5 mr-2"
@@ -133,7 +132,6 @@
             class="group bg-white rounded-2xl p-6 sm:p-8 border border-gray-100 hover:border-primary-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 text-center block"
             :class="`animate-slide-up`"
             :style="`animation-delay: ${index * 0.1}s`"
-            @click="handleServiceClick(service.title)"
           >
             <div
               class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300 mx-auto"
@@ -401,7 +399,6 @@
             href="tel:0668314690"
             class="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-taxi-yellow hover:bg-taxi-yellow-hover text-gray-900 font-bold rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg text-sm sm:text-base"
             aria-label="Appeler le taxi au 06 68 31 46 90"
-            @click="trackCall('cta_section')"
           >
             <PhoneIcon
               class="h-4 sm:h-5 w-4 sm:w-5 mr-2"
@@ -471,24 +468,6 @@ const advantages = [
   },
 ]
 
-// GTM tracking
-const { trackCall, trackPageView, trackServiceClick } = useGTM()
-
-// Tracker la page vue
-onMounted(() => {
-  trackPageView('homepage')
-})
-
-// Tracker les clics sur les services
-const handleServiceClick = (serviceTitle) => {
-  const serviceTypes = {
-    'Taxi Local Les Sables d\'Olonne': 'local_taxi',
-    'Taxi Gare SNCF & Aéroport': 'airport_shuttle',
-    'Transport Médical Conventionné': 'medical_transport',
-  }
-  trackServiceClick(serviceTypes[serviceTitle] || 'unknown', 'homepage')
-}
-
 // Schema.org LocalBusiness pour la page d'accueil
 useSchemaOrg([
   defineLocalBusiness({
@@ -505,7 +484,7 @@ useSchemaOrg([
     paymentAccepted: ['Cash', 'CreditCard'],
     address: {
       '@type': 'PostalAddress',
-      'streetAddress': 'Place Napoléon III',
+      'streetAddress': '3 place Napoléon III',
       'addressLocality': 'Les Sables d\'Olonne',
       'postalCode': '85100',
       'addressCountry': 'FR',

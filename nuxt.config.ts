@@ -48,7 +48,6 @@ export default defineNuxtConfig({
     emailSmtpPassword: process.env.NUXT_EMAIL_SMTP_PASSWORD,
     public: {
       emailSender: process.env.NUXT_PUBLIC_EMAIL_SENDER,
-      gtmId: process.env.NUXT_GTM_ID || 'GTM-XXXXXXX',
     },
   },
   compatibilityDate: '2025-05-15',
