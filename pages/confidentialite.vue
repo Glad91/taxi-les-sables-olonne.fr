@@ -91,7 +91,21 @@ useSeoMeta({
   title: 'Politique de Confidentialité - Taxi Les Sables d\'Olonne',
   description:
       'Politique de confidentialité et protection des données de Taxi Les Sables d\'Olonne. RGPD et respect de votre vie privée.',
+  
+  // Open Graph
+  ogTitle: 'Politique de Confidentialité - Taxi Les Sables d\'Olonne',
+  ogDescription: 'Politique de confidentialité et protection des données de Taxi Les Sables d\'Olonne. RGPD et respect de votre vie privée.',
+  ogImage: 'https://www.taxi-les-sables-olonne.fr/images/twitter_og.png',
   ogUrl: 'https://www.taxi-les-sables-olonne.fr/confidentialite',
+  ogType: 'website',
+  ogSiteName: 'Taxi Les Sables d\'Olonne',
+  
+  // Twitter Card
+  twitterTitle: 'Politique de Confidentialité - Taxi Les Sables d\'Olonne',
+  twitterDescription: 'Politique de confidentialité et protection des données de Taxi Les Sables d\'Olonne. RGPD et respect de votre vie privée.',
+  twitterImage: 'https://www.taxi-les-sables-olonne.fr/images/twitter_og.png',
+  twitterCard: 'summary_large_image',
+  
   canonicalUrl: 'https://www.taxi-les-sables-olonne.fr/confidentialite',
   robots: 'noindex, nofollow',
 })

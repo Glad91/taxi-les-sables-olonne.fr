@@ -447,7 +447,7 @@ useSeoMeta({
   // Open Graph
   ogTitle: 'Navette Taxi Aéroport Nantes & Gares SNCF - Les Sables d\'Olonne',
   ogDescription: 'Transport navette taxi vers aéroport Nantes Atlantique, gare TGV La Roche-sur-Yon et gares SNCF. Suivi temps réel, tarifs fixes. Réservation 06 68 31 46 90.',
-  ogImage: 'https://www.taxi-les-sables-olonne.fr/images/gare-sables-olonne-batiment.webp',
+  ogImage: 'https://www.taxi-les-sables-olonne.fr/images/twitter_og.png',
   ogUrl: 'https://www.taxi-les-sables-olonne.fr/navette-aeroport-gare',
   ogType: 'website',
   ogSiteName: 'Taxi Les Sables d\'Olonne',
@@ -455,7 +455,7 @@ useSeoMeta({
   // Twitter Card
   twitterTitle: 'Navette Taxi Aéroport Nantes & Gares SNCF - Les Sables d\'Olonne',
   twitterDescription: 'Transport navette taxi vers aéroport Nantes Atlantique, gare TGV La Roche-sur-Yon et gares SNCF. Suivi temps réel, tarifs fixes.',
-  twitterImage: 'https://www.taxi-les-sables-olonne.fr/images/gare-sables-olonne-batiment.webp',
+  twitterImage: 'https://www.taxi-les-sables-olonne.fr/images/twitter_og.png',
   twitterCard: 'summary_large_image',
 })
 </script>

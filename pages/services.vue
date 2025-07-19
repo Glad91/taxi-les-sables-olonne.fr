@@ -396,5 +396,19 @@ useSeoMeta({
   title: 'Services Taxi Les Sables d\'Olonne - Transport local, médical, gare',
   description:
       'Services Taxi Les Sables d\'Olonne : transport local, médical conventionné CPAM, liaisons gare-aéroport. Service 24h/24, 06 68 31 46 90.',
+  
+  // Open Graph
+  ogTitle: 'Services Taxi Les Sables d\'Olonne - Transport local, médical, gare',
+  ogDescription: 'Services Taxi Les Sables d\'Olonne : transport local, médical conventionné CPAM, liaisons gare-aéroport. Service 24h/24, 06 68 31 46 90.',
+  ogImage: 'https://www.taxi-les-sables-olonne.fr/images/twitter_og.png',
+  ogUrl: 'https://www.taxi-les-sables-olonne.fr/services',
+  ogType: 'website',
+  ogSiteName: 'Taxi Les Sables d\'Olonne',
+  
+  // Twitter Card
+  twitterTitle: 'Services Taxi Les Sables d\'Olonne - Transport local, médical, gare',
+  twitterDescription: 'Services Taxi Les Sables d\'Olonne : transport local, médical conventionné CPAM, liaisons gare-aéroport. Service 24h/24.',
+  twitterImage: 'https://www.taxi-les-sables-olonne.fr/images/twitter_og.png',
+  twitterCard: 'summary_large_image',
 })
 </script>

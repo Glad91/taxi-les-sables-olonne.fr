@@ -74,7 +74,21 @@ useSeoMeta({
   title: 'Mentions Légales - Taxi Les Sables d\'Olonne',
   description:
       'Mentions légales de Taxi Les Sables d\'Olonne. Informations légales, contact et conditions d\'utilisation.',
+  
+  // Open Graph
+  ogTitle: 'Mentions Légales - Taxi Les Sables d\'Olonne',
+  ogDescription: 'Mentions légales de Taxi Les Sables d\'Olonne. Informations légales, contact et conditions d\'utilisation.',
+  ogImage: 'https://www.taxi-les-sables-olonne.fr/images/twitter_og.png',
   ogUrl: 'https://www.taxi-les-sables-olonne.fr/mentions-legales',
+  ogType: 'website',
+  ogSiteName: 'Taxi Les Sables d\'Olonne',
+  
+  // Twitter Card
+  twitterTitle: 'Mentions Légales - Taxi Les Sables d\'Olonne',
+  twitterDescription: 'Mentions légales de Taxi Les Sables d\'Olonne. Informations légales, contact et conditions d\'utilisation.',
+  twitterImage: 'https://www.taxi-les-sables-olonne.fr/images/twitter_og.png',
+  twitterCard: 'summary_large_image',
+  
   canonicalUrl: 'https://www.taxi-les-sables-olonne.fr/mentions-legales',
   robots: 'noindex, nofollow',
 })

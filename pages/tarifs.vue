@@ -307,5 +307,19 @@ useSeoMeta({
   title: 'Tarifs Taxi Les Sables d\'Olonne - Prix réglementés Vendée 2025',
   description:
       'Consultez les tarifs de votre taxi aux Sables d\'Olonne. Prix au km, forfaits aéroports Nantes et La Rochelle, et devis gratuit pour toutes distances en Vendée.',
+  
+  // Open Graph
+  ogTitle: 'Tarifs Taxi Les Sables d\'Olonne - Prix réglementés Vendée 2025',
+  ogDescription: 'Consultez les tarifs de votre taxi aux Sables d\'Olonne. Prix au km, forfaits aéroports Nantes et La Rochelle, et devis gratuit pour toutes distances en Vendée.',
+  ogImage: 'https://www.taxi-les-sables-olonne.fr/images/twitter_og.png',
+  ogUrl: 'https://www.taxi-les-sables-olonne.fr/tarifs',
+  ogType: 'website',
+  ogSiteName: 'Taxi Les Sables d\'Olonne',
+  
+  // Twitter Card
+  twitterTitle: 'Tarifs Taxi Les Sables d\'Olonne - Prix réglementés Vendée 2025',
+  twitterDescription: 'Consultez les tarifs de votre taxi aux Sables d\'Olonne. Prix au km, forfaits aéroports, devis gratuit.',
+  twitterImage: 'https://www.taxi-les-sables-olonne.fr/images/twitter_og.png',
+  twitterCard: 'summary_large_image',
 })
 </script>

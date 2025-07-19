@@ -628,5 +628,19 @@ useSeoMeta({
   title: 'Contact Taxi Les Sables d\'Olonne - Réservation 06 68 31 46 90',
   description:
       'Contact Taxi Les Sables d\'Olonne - Réservation 06 68 31 46 90. Service 24h/24, Place Napoléon III. Transport médical conventionné, gare, aéroport.',
+  
+  // Open Graph
+  ogTitle: 'Contact Taxi Les Sables d\'Olonne - Réservation 06 68 31 46 90',
+  ogDescription: 'Contact Taxi Les Sables d\'Olonne - Réservation 06 68 31 46 90. Service 24h/24, Place Napoléon III. Transport médical conventionné, gare, aéroport.',
+  ogImage: 'https://www.taxi-les-sables-olonne.fr/images/twitter_og.png',
+  ogUrl: 'https://www.taxi-les-sables-olonne.fr/contact',
+  ogType: 'website',
+  ogSiteName: 'Taxi Les Sables d\'Olonne',
+  
+  // Twitter Card
+  twitterTitle: 'Contact Taxi Les Sables d\'Olonne - Réservation 06 68 31 46 90',
+  twitterDescription: 'Contact Taxi Les Sables d\'Olonne - Réservation 06 68 31 46 90. Service 24h/24, transport médical, gare, aéroport.',
+  twitterImage: 'https://www.taxi-les-sables-olonne.fr/images/twitter_og.png',
+  twitterCard: 'summary_large_image',
 })
 </script>

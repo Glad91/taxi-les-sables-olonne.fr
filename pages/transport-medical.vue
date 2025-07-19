@@ -338,5 +338,19 @@ useSeoMeta({
   title: 'Transport Médical Conventionné Taxi Les Sables d\'Olonne - CPAM',
   description:
       'Transport médical conventionné CPAM aux Sables d\'Olonne. Service agréé pour consultations, hospitalisations, dialyse, chimiothérapie. Tiers payant, aucun frais à avancer. Réservation 24h/24 au 06 68 31 46 90.',
+  
+  // Open Graph
+  ogTitle: 'Transport Médical Conventionné Taxi Les Sables d\'Olonne - CPAM',
+  ogDescription: 'Transport médical conventionné CPAM aux Sables d\'Olonne. Service agréé pour consultations, hospitalisations, dialyse, chimiothérapie. Tiers payant, aucun frais à avancer.',
+  ogImage: 'https://www.taxi-les-sables-olonne.fr/images/twitter_og.png',
+  ogUrl: 'https://www.taxi-les-sables-olonne.fr/transport-medical',
+  ogType: 'website',
+  ogSiteName: 'Taxi Les Sables d\'Olonne',
+  
+  // Twitter Card
+  twitterTitle: 'Transport Médical Conventionné Taxi Les Sables d\'Olonne - CPAM',
+  twitterDescription: 'Transport médical conventionné CPAM aux Sables d\'Olonne. Service agréé, tiers payant, aucun frais à avancer. 06 68 31 46 90.',
+  twitterImage: 'https://www.taxi-les-sables-olonne.fr/images/twitter_og.png',
+  twitterCard: 'summary_large_image',
 })
 </script>
