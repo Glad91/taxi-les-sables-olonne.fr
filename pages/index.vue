@@ -105,7 +105,7 @@
           </h2>
           <p class="text-lg sm:text-xl text-gray-800 max-w-3xl mx-auto px-4 leading-relaxed">
             Transport professionnel en
-            <strong>Vendée</strong>
+            Vendée
             : courses locales,
             <NuxtLink
               to="/navette-aeroport-gare"
@@ -292,7 +292,7 @@
               propre. Je recommande !"
             </p>
             <div class="text-xs sm:text-sm text-gray-700">
-              <strong>Marie D.</strong>
+              Marie D.
               - Transport médical
             </div>
           </div>
@@ -308,7 +308,7 @@
               Tarif transparent annoncé à l'avance."
             </p>
             <div class="text-xs sm:text-sm text-gray-700">
-              <strong>Jean-Pierre L.</strong>
+              Jean-Pierre L.
               - Transfert aéroport
             </div>
           </div>
@@ -324,7 +324,7 @@
               professionnel et courtois."
             </p>
             <div class="text-xs sm:text-sm text-gray-700">
-              <strong>Sophie M.</strong>
+              Sophie M.
               - Course de nuit
             </div>
           </div>
@@ -342,7 +342,7 @@
           <p class="mb-4 sm:mb-6 text-sm sm:text-base">
             <strong>Taxi Les Sables d'Olonne</strong>
             est votre partenaire transport de confiance en
-            <strong>Vendée</strong>
+            Vendée
             . Situés
             <strong>Place Napoléon III aux Sables d'Olonne</strong>
             , nous assurons vos déplacements 24h/24 et 7j/7 vers toutes destinations.
@@ -512,7 +512,7 @@ useSchemaOrg([
 ])
 
 useSeoMeta({
-  title: 'Taxi Les Sables d\'Olonne 24h/24 | 06 68 31 46 90',
+  title: 'Taxi Les Sables d\'Olonne | 06 68 31 46 90',
   description:
       'Service de taxi professionnel aux Sables d\'Olonne 24h/24. Transport médical CPAM, navette aéroport Nantes, gare SNCF. Tarifs réglementés Vendée.',
   ogTitle: 'Taxi Les Sables d\'Olonne - Service 24h/24 Vendée | 06 68 31 46 90',
