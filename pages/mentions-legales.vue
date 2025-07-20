@@ -71,7 +71,7 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Mentions Légales - Taxi Les Sables d\'Olonne',
+  title: 'Mentions Légales',
   description:
       'Mentions légales de Taxi Les Sables d\'Olonne. Informations légales, contact et conditions d\'utilisation.',
   

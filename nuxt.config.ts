@@ -11,7 +11,6 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
       // Le titre et la description par défaut seront gérés par le module SEO via la config `site`
       // et `useSeoMeta` dans les pages individuelles.
-      title: 'Taxi Les Sables d\'Olonne',
       meta: [
         {
           name: 'description',

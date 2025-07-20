@@ -59,9 +59,9 @@
               <NuxtLink
                 to="/contact"
                 class="inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-gray-100 border-2 border-white text-primary-600 font-semibold rounded-xl transition-all duration-200"
-                aria-label="Réserver en ligne"
+                aria-label="Formulaire de contact"
               >
-                Réserver en ligne
+                Formulaire de contact
                 <ArrowRightIcon
                   class="h-5 w-5 ml-2"
                   aria-hidden="true"
@@ -105,7 +105,7 @@
           </h2>
           <p class="text-lg sm:text-xl text-gray-800 max-w-3xl mx-auto px-4 leading-relaxed">
             Transport professionnel en
-            Vendée
+            <a href="https://www.vendee-tourisme.com/" target="_blank" rel="noopener" class="text-primary-600 hover:underline">Vendée</a>
             : courses locales,
             <NuxtLink
               to="/navette-aeroport-gare"
@@ -351,7 +351,7 @@
             Spécialisés dans le transport médical conventionné, nos chauffeurs professionnels vous accompagnent vers les établissements de santé avec prise en charge CPAM. Service de taxi gare SNCF Les Sables d'Olonne et transferts aéroport Nantes avec suivi des horaires en temps réel.
           </p>
           <p class="text-sm sm:text-base">
-            Courses locales Olonne-sur-Mer, Château d'Olonne, La Chaume et longues distances vers La Roche-sur-Yon, Nantes, Challans. Tarifs réglementés Vendée, véhicules climatisés, réservation par téléphone au <strong>06 68 31 46 90</strong>.
+            Courses locales Olonne-sur-Mer, Château d'Olonne, La Chaume et longues distances vers La Roche-sur-Yon, Nantes, Challans. Tarifs réglementés Vendée, véhicules climatisés, réservation par téléphone au 06 68 31 46 90.
           </p>
         </div>
       </div>
@@ -383,7 +383,7 @@
           <NuxtLink
             to="/contact"
             class="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-white hover:bg-gray-100 border-2 border-white text-primary-600 font-semibold rounded-xl transition-all duration-200 text-sm sm:text-base"
-            aria-label="Aller à la page de contact pour réserver en ligne"
+            aria-label="Contact"
           >
             Réserver en ligne
           </NuxtLink>
@@ -512,7 +512,7 @@ useSchemaOrg([
 ])
 
 useSeoMeta({
-  title: 'Taxi Les Sables d\'Olonne | 06 68 31 46 90',
+  title: 'Service 24h/24 Vendée | 06 68 31 46 90',
   description:
       'Service de taxi professionnel aux Sables d\'Olonne 24h/24. Transport médical CPAM, navette aéroport Nantes, gare SNCF. Tarifs réglementés Vendée.',
   ogTitle: 'Taxi Les Sables d\'Olonne - Service 24h/24 Vendée | 06 68 31 46 90',

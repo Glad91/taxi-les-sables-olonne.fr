@@ -335,7 +335,7 @@ useSchemaOrg([
 ])
 
 useSeoMeta({
-  title: 'Transport Médical Conventionné Taxi Les Sables d\'Olonne - CPAM',
+  title: 'Transport Médical Conventionné - CPAM',
   description:
       'Transport médical conventionné CPAM aux Sables d\'Olonne. Service agréé pour consultations, hospitalisations, dialyse, chimiothérapie. Tiers payant, aucun frais à avancer. Réservation 24h/24 au 06 68 31 46 90.',
   

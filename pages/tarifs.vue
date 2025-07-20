@@ -304,7 +304,7 @@ useSchemaOrg([
 ])
 
 useSeoMeta({
-  title: 'Tarifs Taxi Les Sables d\'Olonne - Prix réglementés Vendée | Devis gratuit',
+  title: 'Tarifs réglementés Vendée | Devis gratuit',
   description:
       'Consultez les tarifs de votre taxi aux Sables d\'Olonne. Prix au km, forfaits aéroports Nantes et La Rochelle, et devis gratuit pour toutes distances en Vendée.',
   

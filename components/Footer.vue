@@ -56,6 +56,29 @@
             <li>La Roche-sur-Yon</li>
             <li>Nantes (sur réservation)</li>
           </ul>
+          
+          <!-- Liens utiles -->
+          <div class="pt-2 border-t border-gray-800">
+            <h4 class="text-sm font-medium text-taxi-yellow mb-2">Liens utiles</h4>
+            <div class="space-y-1 text-xs text-gray-400">
+              <a 
+                href="https://www.ot-lessablesdolonne.fr/" 
+                target="_blank" 
+                rel="noopener"
+                class="block hover:text-white transition-colors"
+              >
+                Office de Tourisme Les Sables d'Olonne
+              </a>
+              <a 
+                href="https://www.lessablesdolonne.fr/" 
+                target="_blank" 
+                rel="noopener"
+                class="block hover:text-white transition-colors"
+              >
+                Mairie des Sables d'Olonne
+              </a>
+            </div>
+          </div>
         </div>
 
         <!-- Services -->

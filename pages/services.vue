@@ -393,7 +393,7 @@ useSchemaOrg([
 ])
 
 useSeoMeta({
-  title: 'Services Taxi Les Sables d\'Olonne 24h/24 - Transport médical CPAM, navette aéroport',
+  title: 'Services 24h/24 - Transport médical, aéroport',
   description:
       'Services Taxi Les Sables d\'Olonne : transport local, médical conventionné CPAM, liaisons gare-aéroport. Service 24h/24, 06 68 31 46 90.',
   

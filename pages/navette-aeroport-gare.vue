@@ -439,7 +439,7 @@ useSchemaOrg([
 ])
 
 useSeoMeta({
-  title: 'Navette Taxi Aéroport Nantes & Gare SNCF - Les Sables d\'Olonne Vendée',
+  title: 'Navette Aéroport Nantes & Gare SNCF',
   description:
       'Transport navette taxi vers aéroport Nantes Atlantique, gare TGV La Roche-sur-Yon et gares SNCF. Suivi temps réel, tarifs fixes. Réservation 06 68 31 46 90.',
   keywords: 'navette aéroport Nantes, taxi gare SNCF, transport TGV La Roche-sur-Yon, navette Sables Olonne, transfert aéroport, shuttle Nantes Atlantique',

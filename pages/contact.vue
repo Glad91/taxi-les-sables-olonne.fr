@@ -899,7 +899,7 @@ useSchemaOrg([
 ])
 
 useSeoMeta({
-  title: 'Contact Taxi Les Sables d\'Olonne - Réservation 06 68 31 46 90',
+  title: 'Contact - Réservation 06 68 31 46 90',
   description:
       'Contact Taxi Les Sables d\'Olonne - Réservation 06 68 31 46 90. Service 24h/24, Place Napoléon III. Transport médical conventionné, gare, aéroport.',
   

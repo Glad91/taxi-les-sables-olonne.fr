@@ -133,3 +133,7 @@ This is a taxi service website for Les Sables d'Olonne, France specializing in:
 
 Phone number: 06 68 31 46 90
 Service area: Les Sables d'Olonne and Vendée region
+
+## Accessibility Notes
+
+- je n'ai pas de véhicule PMR

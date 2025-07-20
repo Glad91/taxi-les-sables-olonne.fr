@@ -88,7 +88,7 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Politique de Confidentialité - Taxi Les Sables d\'Olonne',
+  title: 'Politique de Confidentialité',
   description:
       'Politique de confidentialité et protection des données de Taxi Les Sables d\'Olonne. RGPD et respect de votre vie privée.',
   
