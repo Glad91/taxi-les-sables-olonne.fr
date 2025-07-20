@@ -51,6 +51,7 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2025-05-15',
   nitro: {
+    preset: 'vercel-edge',
     prerender: {
       routes: ['/sitemap.xml'],
     },
@@ -61,8 +62,21 @@ export default defineNuxtConfig({
       '/**': {
         headers: {
           'X-Powered-By': '',
+          'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload',
+          'X-Content-Type-Options': 'nosniff',
+          'X-Frame-Options': 'DENY',
+          'Referrer-Policy': 'strict-origin-when-cross-origin',
         },
       },
+      // Prérendu statique pour de meilleures performances
+      '/': { prerender: true },
+      '/services': { prerender: true },
+      '/transport-medical': { prerender: true },
+      '/navette-aeroport-gare': { prerender: true },
+      '/tarifs': { prerender: true },
+      '/contact': { prerender: true },
+      '/confidentialite': { prerender: true },
+      '/mentions-legales': { prerender: true },
     },
   },
   googleFonts: {
@@ -85,10 +99,12 @@ export default defineNuxtConfig({
     // Activer le sitemap et robots.txt automatiques
     sitemap: {
       enabled: true,
+      strictNuxtContentPaths: true,
       // Plus d\'options si nécessaire
     },
     robots: {
       enabled: true,
+      disallow: ['/admin', '/.htaccess'],
       // Plus d\'options si nécessaire
     },
     // Activer le vérificateur de liens (utile en dev/build)

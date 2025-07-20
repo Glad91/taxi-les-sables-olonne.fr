@@ -1,0 +1,12 @@
+# Vercel ignore file
+.nuxt
+dist
+.output
+node_modules
+.env.local
+.env.production
+.DS_Store
+coverage
+*.log
+.claude/
+docs/
