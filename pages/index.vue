@@ -77,23 +77,12 @@
             <div class="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10" />
               <img
-                v-if="$dev"
-                src="/images/la-pendule-les-sables-dolonne.jpg"
-                alt="Les Sables d'Olonne - La Pendule sur la plage"
-                class="w-full h-full object-cover"
-                width="800"
-                height="500"
-                loading="eager"
-              />
-              <NuxtImg
-                v-else
                 src="/images/la-pendule-les-sables-dolonne.webp"
                 alt="Les Sables d'Olonne - La Pendule sur la plage"
                 class="w-full h-full object-cover"
                 width="800"
                 height="500"
                 loading="eager"
-                placeholder
               />
               <div class="absolute bottom-4 left-4 z-20 text-white">
                 <div class="text-sm font-medium">
