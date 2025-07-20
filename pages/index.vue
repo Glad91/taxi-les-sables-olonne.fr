@@ -17,23 +17,23 @@
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div class="animate-fade-in text-center lg:text-left">
+          <div class=" text-center lg:text-left">
             <div
               class="inline-flex items-center px-4 py-2 bg-taxi-yellow/20 border border-taxi-yellow/30 rounded-full text-taxi-yellow text-sm font-medium mb-6"
             >
-              <span class="w-2 h-2 bg-taxi-yellow rounded-full mr-2 animate-pulse" />
+              <span class="w-2 h-2 bg-taxi-yellow rounded-full mr-2 " />
               Service 24h/24 - 7j/7
             </div>
 
             <h1
-              class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-6 animate-slide-up leading-tight"
+              class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-6  leading-tight"
             >
               <span class="text-taxi-yellow">Taxi Les Sables d'Olonne</span>
             </h1>
 
             <p
-              class="text-lg sm:text-xl lg:text-2xl text-gray-100 mb-8 animate-slide-up leading-relaxed"
-              style="animation-delay: 0.2s"
+              class="text-lg sm:text-xl lg:text-2xl text-gray-100 mb-8  leading-relaxed"
+              
             >
               Votre
               <strong>taxi professionnel aux Sables d'Olonne</strong>
@@ -42,8 +42,8 @@
             </p>
 
             <div
-              class="flex flex-col sm:flex-row gap-4 animate-slide-up"
-              style="animation-delay: 0.4s"
+              class="flex flex-col sm:flex-row gap-4 "
+              
             >
               <a
                 href="tel:0668314690"
@@ -71,8 +71,8 @@
           </div>
 
           <div
-            class="relative animate-fade-in"
-            style="animation-delay: 0.6s"
+            class="relative "
+            
           >
             <div class="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10" />
@@ -130,8 +130,8 @@
             :key="service.title"
             :to="service.href"
             class="group bg-white rounded-2xl p-6 sm:p-8 border border-gray-100 hover:border-primary-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 text-center block"
-            :class="`animate-slide-up`"
-            :style="`animation-delay: ${index * 0.1}s`"
+            :class="``"
+            
           >
             <div
               class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300 mx-auto"
@@ -163,8 +163,8 @@
           <div
             v-for="(advantage, index) in advantages"
             :key="advantage.title"
-            class="text-center animate-slide-up px-4"
-            :style="`animation-delay: ${index * 0.2}s`"
+            class="text-center  px-4"
+            
           >
             <div
               class="w-16 sm:w-20 h-16 sm:h-20 bg-primary-100 rounded-full flex items-center justify-center text-2xl sm:text-3xl mx-auto mb-4 sm:mb-6"

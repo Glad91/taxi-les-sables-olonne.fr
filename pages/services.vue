@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="animate-fade-in">
+        <div class="">
           <h1 class="text-4xl lg:text-5xl font-bold mb-6">
             Nos Services de Transport
           </h1>
@@ -14,7 +14,7 @@
           <div
             class="inline-flex items-center px-6 py-3 bg-taxi-yellow/20 border border-taxi-yellow/30 rounded-full text-taxi-yellow font-semibold"
           >
-            <span class="w-2 h-2 bg-taxi-yellow rounded-full mr-2 animate-pulse" />
+            <span class="w-2 h-2 bg-taxi-yellow rounded-full mr-2 " />
             Disponible 24h/24 - 7j/7
           </div>
         </div>
@@ -29,8 +29,8 @@
             v-for="(service, index) in services"
             :key="service.title"
             :to="service.href"
-            class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-slide-up block"
-            :style="`animation-delay: ${index * 0.1}s`"
+            class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2  block"
+            
           >
             <div class="flex items-start space-x-6">
               <div class="flex-shrink-0">
@@ -90,8 +90,8 @@
           <div
             v-for="(advantage, index) in advantages"
             :key="advantage.title"
-            class="text-center group animate-slide-up"
-            :style="`animation-delay: ${index * 0.1}s`"
+            class="text-center group "
+            
           >
             <div
               class="w-20 h-20 bg-gradient-to-br from-primary-100 to-primary-200 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300"
@@ -116,7 +116,7 @@
     <section class="py-20 bg-gradient-to-r from-gray-50 to-blue-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div class="animate-fade-in">
+          <div class="">
             <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
               Notre zone de
               <span class="text-primary-600">couverture</span>
@@ -152,7 +152,7 @@
             </div>
           </div>
 
-          <div class="relative animate-fade-in">
+          <div class="relative ">
             <div class="relative w-full h-96 rounded-2xl overflow-hidden shadow-2xl">
               <NuxtImg
                 src="/images/sables-olonne-port-real.jpg"

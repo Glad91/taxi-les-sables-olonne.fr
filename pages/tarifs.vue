@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="animate-fade-in">
+        <div class="">
           <div
             class="inline-flex items-center px-4 py-2 bg-taxi-yellow/20 border border-taxi-yellow/30 rounded-full text-taxi-yellow text-sm font-medium mb-6"
           >
@@ -27,8 +27,8 @@
           <div
             v-for="(category, index) in pricingCategories"
             :key="index"
-            class="bg-white rounded-2xl p-6 border-2 border-gray-100 hover:border-primary-300/50 transition-all duration-300 animate-slide-up shadow-lg hover:shadow-xl flex flex-col"
-            :style="`animation-delay: ${index * 0.1}s`"
+            class="bg-white rounded-2xl p-6 border-2 border-gray-100 hover:border-primary-300/50 transition-all duration-300  shadow-lg hover:shadow-xl flex flex-col"
+            
           >
             <div class="flex items-center gap-3 mb-6">
               <div class="p-3 bg-primary-100 rounded-xl">
