@@ -48,7 +48,7 @@
               <a
                 href="tel:0668314690"
                 class="inline-flex items-center justify-center px-8 py-4 bg-taxi-yellow hover:bg-taxi-yellow-hover text-gray-900 font-bold rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
-                aria-label="Appeler maintenant le taxi au 06 68 31 46 90"
+                aria-label="Appeler le taxi"
               >
                 <PhoneIcon
                   class="h-5 w-5 mr-2"
@@ -59,7 +59,7 @@
               <NuxtLink
                 to="/contact"
                 class="inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-gray-100 border-2 border-white text-primary-600 font-semibold rounded-xl transition-all duration-200"
-                aria-label="Aller à la page de contact pour réserver en ligne"
+                aria-label="Réserver en ligne"
               >
                 Réserver en ligne
                 <ArrowRightIcon
@@ -348,33 +348,10 @@
             , nous assurons vos déplacements 24h/24 et 7j/7 vers toutes destinations.
           </p>
           <p class="mb-4 sm:mb-6 text-sm sm:text-base">
-            Spécialisés dans le
-            <strong>transport médical conventionné</strong>
-            , nos chauffeurs professionnels vous accompagnent vers les établissements de santé avec
-            prise en charge
-            <strong>CPAM</strong>
-            . Service de
-            <strong>taxi gare SNCF Les Sables d'Olonne</strong>
-            et transferts
-            <strong>aéroport Nantes</strong>
-            avec suivi des horaires en temps réel.
+            Spécialisés dans le transport médical conventionné, nos chauffeurs professionnels vous accompagnent vers les établissements de santé avec prise en charge CPAM. Service de taxi gare SNCF Les Sables d'Olonne et transferts aéroport Nantes avec suivi des horaires en temps réel.
           </p>
           <p class="text-sm sm:text-base">
-            Courses locales
-            <strong>Olonne-sur-Mer</strong>
-            ,
-            <strong>Château d'Olonne</strong>
-            ,
-            <strong>La Chaume</strong>
-            et longues distances vers
-            <strong>La Roche-sur-Yon</strong>
-            ,
-            <strong>Nantes</strong>
-            ,
-            <strong>Challans</strong>
-            . Tarifs réglementés Vendée, véhicules climatisés, réservation par téléphone au
-            <strong>06 68 31 46 90</strong>
-            .
+            Courses locales Olonne-sur-Mer, Château d'Olonne, La Chaume et longues distances vers La Roche-sur-Yon, Nantes, Challans. Tarifs réglementés Vendée, véhicules climatisés, réservation par téléphone au <strong>06 68 31 46 90</strong>.
           </p>
         </div>
       </div>
@@ -389,10 +366,7 @@
         <p
           class="text-lg sm:text-xl text-gray-100 mb-6 sm:mb-8 max-w-2xl mx-auto px-4 leading-relaxed"
         >
-          <strong>Service 24h/24</strong>
-          • Réservation immédiate au
-          <strong>06 68 31 46 90</strong>
-          • Transport médical, gare SNCF, aéroport Nantes • Tarifs réglementés Vendée
+          Service 24h/24 • Réservation immédiate au <strong>06 68 31 46 90</strong> • Transport médical, gare SNCF, aéroport Nantes • Tarifs réglementés Vendée
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center px-4">
           <a
@@ -538,9 +512,9 @@ useSchemaOrg([
 ])
 
 useSeoMeta({
-  title: 'Taxi Les Sables d\'Olonne - Service 24h/24 Vendée | 06 68 31 46 90',
+  title: 'Taxi Les Sables d\'Olonne 24h/24 | 06 68 31 46 90',
   description:
-      'Taxi Les Sables d\'Olonne ⭐ Service 24h/24 au 06 68 31 46 90. Transport médical conventionné CPAM, gare SNCF, aéroport Nantes. Tarifs réglementés Vendée. Place Napoléon III.',
+      'Service de taxi professionnel aux Sables d\'Olonne 24h/24. Transport médical CPAM, navette aéroport Nantes, gare SNCF. Tarifs réglementés Vendée.',
   ogTitle: 'Taxi Les Sables d\'Olonne - Service 24h/24 Vendée | 06 68 31 46 90',
   ogDescription:
     'Taxi Les Sables d\'Olonne ⭐ Service 24h/24 au 06 68 31 46 90. Transport médical conventionné CPAM, gare SNCF, aéroport Nantes. Tarifs réglementés Vendée. Place Napoléon III.',
