@@ -111,14 +111,14 @@
               to="/navette-aeroport-gare"
               class="text-primary-600 hover:underline"
             >
-              transferts gare SNCF et aéroport Nantes
+              transferts gare et aéroport
             </NuxtLink>
             , et
             <NuxtLink
               to="/transport-medical"
               class="text-primary-600 hover:underline"
             >
-              transport médical conventionné CPAM
+              transport médical CPAM
             </NuxtLink>
             .
           </p>
@@ -336,7 +336,7 @@
     <section class="py-12 sm:py-16 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 px-4">
-          Votre Taxi de Confiance aux Sables d'Olonne et en Vendée
+          Votre Taxi de Confiance en Vendée
         </h2>
         <div class="max-w-4xl mx-auto text-gray-800 leading-relaxed px-4">
           <p class="mb-4 sm:mb-6 text-sm sm:text-base">
@@ -357,11 +357,25 @@
       </div>
     </section>
 
+    <!-- Social Share Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <SocialShare
+          title="Recommandez notre service taxi !"
+          :text="`Taxi Les Sables d'Olonne 🚕 Service 24h/24 au 06 68 31 46 90 - Transport médical CPAM, navette aéroport Nantes et gares SNCF. Tarifs réglementés Vendée.`"
+          email-subject="Taxi Les Sables d'Olonne - Service professionnel 24h/24"
+        />
+        <p class="text-sm text-gray-600 mt-4">
+          Aidez-nous à faire connaître notre service de taxi aux Sables d'Olonne
+        </p>
+      </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="py-20 bg-primary-600">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 px-4">
-          Réservez votre Taxi aux Sables d'Olonne
+          Réservez votre Taxi
         </h2>
         <p
           class="text-lg sm:text-xl text-gray-100 mb-6 sm:mb-8 max-w-2xl mx-auto px-4 leading-relaxed"

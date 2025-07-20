@@ -54,6 +54,16 @@ export default defineNuxtConfig({
     prerender: {
       routes: ['/sitemap.xml'],
     },
+    experimental: {
+      wasm: true
+    },
+    routeRules: {
+      '/**': {
+        headers: {
+          'X-Powered-By': '',
+        },
+      },
+    },
   },
   googleFonts: {
     families: {
