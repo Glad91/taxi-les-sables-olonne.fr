@@ -11,7 +11,7 @@
             Agréé par la Caisse Primaire d'Assurance Maladie (CPAM)
           </div>
           <h1 class="text-4xl lg:text-5xl font-bold mb-6">
-            Transport Médical Conventionné
+            Transport Médical Conventionné Taxi Les Sables d'Olonne
           </h1>
           <p class="text-xl lg:text-2xl text-gray-100 mb-8 max-w-3xl mx-auto">
             Votre taxi conventionné pour tous vos déplacements médicaux aux Sables d'Olonne et en

@@ -11,7 +11,7 @@
             Tarifs réglementés Vendée 2025
           </div>
           <h1 class="text-4xl lg:text-5xl font-bold mb-6">
-            Nos Tarifs Transparents
+            Tarifs Taxi Les Sables d'Olonne - Prix Réglementés Vendée
           </h1>
           <p class="text-xl lg:text-2xl text-gray-100 mb-8 max-w-3xl mx-auto">
             Une tarification claire, réglementée et sans surprise pour l'ensemble de nos services.
@@ -304,7 +304,7 @@ useSchemaOrg([
 ])
 
 useSeoMeta({
-  title: 'Tarifs Taxi Les Sables d\'Olonne - Prix réglementés Vendée 2025',
+  title: 'Tarifs Taxi Les Sables d\'Olonne - Prix réglementés Vendée | Devis gratuit',
   description:
       'Consultez les tarifs de votre taxi aux Sables d\'Olonne. Prix au km, forfaits aéroports Nantes et La Rochelle, et devis gratuit pour toutes distances en Vendée.',
   
