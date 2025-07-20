@@ -29,7 +29,17 @@
       "WebFetch(domain:ogp.me)",
       "WebFetch(domain:favicon.io)",
       "Bash(curl:*)",
-      "Bash(pnpm dev:*)"
+      "Bash(pnpm dev:*)",
+      "WebFetch(domain:localhost)",
+      "WebFetch(domain:localhost)",
+      "WebFetch(domain:localhost)",
+      "WebFetch(domain:localhost)",
+      "WebFetch(domain:localhost)",
+      "WebFetch(domain:localhost)",
+      "WebFetch(domain:localhost)",
+      "WebFetch(domain:localhost)",
+      "Bash(grep:*)",
+      "Bash(pnpm run:*)"
     ],
     "deny": []
   }
