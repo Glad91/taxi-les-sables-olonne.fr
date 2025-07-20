@@ -25,7 +25,11 @@
       "WebFetch(domain:commons.wikimedia.org)",
       "Bash(cp:*)",
       "Bash(identify:*)",
-      "Bash(magick:*)"
+      "Bash(magick:*)",
+      "WebFetch(domain:ogp.me)",
+      "WebFetch(domain:favicon.io)",
+      "Bash(curl:*)",
+      "Bash(pnpm dev:*)"
     ],
     "deny": []
   }
