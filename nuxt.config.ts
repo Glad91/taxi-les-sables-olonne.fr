@@ -5,6 +5,13 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/google-fonts', '@nuxtjs/seo', '@nuxtjs/tailwindcss', '@nuxt/image'],
   ssr: true,
   devtools: { enabled: true },
+  image: {
+    // Configuration pour résoudre les problèmes en mode dev
+    dir: 'public',
+    domains: ['localhost'],
+    // Désactiver l'optimisation en dev pour éviter les problèmes
+    provider: process.env.NODE_ENV === 'development' ? 'none' : 'ipx'
+  },
   app: {
     head: {
       charset: 'utf-8',

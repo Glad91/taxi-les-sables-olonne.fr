@@ -76,9 +76,19 @@
           >
             <div class="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10" />
+              <img
+                v-if="$dev"
+                src="/images/la-pendule-les-sables-dolonne.jpg"
+                alt="Les Sables d'Olonne - La Pendule sur la plage"
+                class="w-full h-full object-cover"
+                width="800"
+                height="500"
+                loading="eager"
+              />
               <NuxtImg
-                src="/images/sables-olonne-remblai.jpg"
-                alt="Les Sables d'Olonne - Remblai et plage"
+                v-else
+                src="/images/la-pendule-les-sables-dolonne.webp"
+                alt="Les Sables d'Olonne - La Pendule sur la plage"
                 class="w-full h-full object-cover"
                 width="800"
                 height="500"
@@ -477,7 +487,7 @@ useSchemaOrg([
     url: 'https://www.taxi-les-sables-olonne.fr',
     telephone: '+33668314690',
     email: 'contact@taxi-les-sables-olonne.fr',
-    image: 'https://www.taxi-les-sables-olonne.fr/images/sables-olonne-remblai.jpg',
+    image: 'https://www.taxi-les-sables-olonne.fr/images/la-pendule-les-sables-dolonne.webp',
     logo: 'https://www.taxi-les-sables-olonne.fr/favicon.svg',
     priceRange: '€€',
     currenciesAccepted: 'EUR',
